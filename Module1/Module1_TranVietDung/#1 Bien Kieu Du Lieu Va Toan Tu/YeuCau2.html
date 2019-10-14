@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="javascript">
+    var Name=prompt("Enter Name Customer");
+    var IdCard=prompt("Enter Id Card Customer");
+    var Birthday=prompt("Enter Birthday Customer");
+    var Email=prompt("Enter Email Customer");
+    var Address=prompt("Enter Address Customer");
+    var Type=prompt("Enter Type Customer");
+    var Discount=prompt("Enter Discount");
+    var NOA=prompt("Enter Number Of Acccompannying:");
+    var TypeRoom=prompt("Enter Type Room");
+    var RentDay=prompt("Enter Rent Day");
+    var TypeSevice=prompt("Enter Type Sevice");
+    var Villa=500;
+    var House=300;
+    var Room=100;
+
+    function TaltalPays() {
+
+        switch (TypeRoom) {
+            case 1:
+                Tpays=158;
+                break;
+            case "House":
+                Tpays=RentDay*House*(100-Discount);
+                break;
+            case "Room":
+                Tpays=RentDay*Room*(100-Discount);
+                break;
+        }
+        return Tpays;
+
+    }
+    alert("Information Of Customer"+"\n"
+        +"Name Customer:"+" "+Name +"\n"
+        +"Id Card Customer:"+" "+IdCard+"\n"
+        +"Birthday Customer:"+" "+Birthday+"\n"
+        +"Email Customer:"+" "+Email+"\n"
+        +"Address Customer:"+" "+Address+"\n"
+        +"Type Customer:"+" "+Type+"\n"
+        +"Discount:"+" "+Discount+"\n"
+        +"Number Of Accompanying:"+" "+NOA+"\n"
+        +"Type Room:"+" "+TypeRoom+"\n"
+        +"Rent Day:"+" "+RentDay+"\n"
+        +"Type Sevice:"+" "+TypeSevice+"\n"
+        +"Tatal Pays:"+" "+TaltalPays()+"\n"
+
+    );
+
+
+</script>
+</body>
+</html>
