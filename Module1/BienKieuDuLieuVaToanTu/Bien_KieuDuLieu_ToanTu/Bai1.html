@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let InputSinhHoc=prompt("Nhap Diem Mon Sinh Hoc:");
+    let InputHoaHoc=prompt("Nhap Diem Mon Hoa Hoc:");
+    let InputVatLy=prompt("Nhap Diem Mon Vat Ly:");
+    let SinhHoc=parseInt(InputSinhHoc);
+    let HoaHoc=parseInt(InputHoaHoc);
+    let VatLy=parseInt(InputVatLy);
+    let DiemTrungBinh=(HoaHoc+VatLy+SinhHoc)/3;
+    document.write("Diem Trung Binh 3 Mon la:"+DiemTrungBinh);
+</script>
+</body>
+</html>
