@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <script src="Convert.js"></script>
+    Amount
+    <input type="tetx" name="Amount" id="Amount">
+    From Currency
+    <select id="FromCurr">
+        <option name="VND" selected>VND</option>
+        <option name="USD">USD</option>
+        <option name="Yen">Yen</option>
+    </select>
+    To Current
+    <select id="ToCurr">
+        <option name="VND">VND</option>
+        <option name="USD" selected>USD</option>
+        <option name="Yen">Yen</option>
+
+    </select>
+    <input type="button" value="Convert" onclick="Convert()">
+</form>
+<p>Số Tiền Là:</p><p id="so tien"></p>
+</body>
+</html>
