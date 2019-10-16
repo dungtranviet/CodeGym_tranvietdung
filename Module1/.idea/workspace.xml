@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CauTrucDieuKien/KiemTraNamNhuan/LeapYear.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/KiemTraNamNhuan/LeapYear.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="219">
               <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -61,6 +70,7 @@
         <option value="$PROJECT_DIR$/CaseStudy/test.html" />
         <option value="$PROJECT_DIR$/DoingTest/Index.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/KiemTraNamNhuan/LeapYear.html" />
+        <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html" />
       </list>
     </option>
   </component>
@@ -93,7 +103,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="CauTrucDieuKien" type="462c0819:PsiDirectoryNode" />
-              <item name="KiemTraNamNhuan" type="462c0819:PsiDirectoryNode" />
+              <item name="LuyenTap_If_Else" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,7 +146,7 @@
       <workItem from="1571046335779" duration="1998000" />
       <workItem from="1571058783180" duration="636000" />
       <workItem from="1571102066382" duration="26602000" />
-      <workItem from="1571193478736" duration="9119000" />
+      <workItem from="1571193478736" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -149,7 +159,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43143000" />
+    <option name="totallyTimeSpent" value="43642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -299,8 +309,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/KiemTraNamNhuan/LeapYear.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="219">
           <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
