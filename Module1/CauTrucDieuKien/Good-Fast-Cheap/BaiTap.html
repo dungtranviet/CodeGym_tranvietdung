@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="checkbox" name="Choose" id="Good" onchange=Checker1()>Good</label>
+<label><input type="checkbox" name="Choose" id="Cheap" onchange=Checker2()>Cheap</label>
+<label><input type="checkbox" name="Choose" id="Fast" onchange=Checker3()>Fast</label>
+<script>
+    const CheckBox1 = document.getElementById("Good");
+    const CheckBox2 = document.getElementById("Cheap");
+    const CheckBox3 = document.getElementById("Fast");
+
+    function Checker1() {
+        if (CheckBox1.checked) {
+            if (CheckBox2.checked) {
+                CheckBox3.checked = false;
+            }
+        } else {
+            CheckBox2.checked = true;
+            CheckBox3.checked = true;
+        }
+    }
+
+    function Checker2() {
+        if (CheckBox2.checked) {
+            if (CheckBox3.checked) {
+                CheckBox1.checked = false;
+            }
+        } else {
+            CheckBox1.checked = true;
+            CheckBox3.checked = true;
+        }
+    }
+
+    function Checker3() {
+        if (CheckBox3.checked) {
+            if (CheckBox3.checked) {
+                CheckBox1.checked = false;
+            }
+        } else {
+            CheckBox1.checked = true;
+            CheckBox2.checked = true;
+        }
+    }
+</script>
+</body>
+</html>
