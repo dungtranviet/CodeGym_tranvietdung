@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form>
+    <fieldset>
+        <legend>Tinh So Ngay Trong Thang</legend>
+        <input type="text" id="Month">
+        <input type="button" value="Tinh so ngay" onclick="TinhSoNgay()">
+        <p id="DayIs"></p>
+    </fieldset>
+</form>
+<script>
+    function TinhSoNgay() {
+        let Month =parseInt(document.getElementById("Month").value) ;
+        switch (Month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                //document.getElementById("DayIs").innerHTML = "thang" + " " + Month + " " + "co 31 ngay";
+                document.getElementById("DayIs").innerHTML ="thang" + " " + Month + " " + "co 31 ngay";
+                break;
+            case 2:
+                document.getElementById("DayIs").innerHTML = "thang 2 co 28 hoac 29 ngay";
+                break;
+            default:
+                document.getElementById("DayIs").innerHTML = "thang" + " " + Month + " " + "co 30 ngay";
+        }
+    }
+</script>
 </body>
 </html>
