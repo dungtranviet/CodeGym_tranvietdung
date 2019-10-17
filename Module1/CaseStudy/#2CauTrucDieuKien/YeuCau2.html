@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Name = "Tran Viet Dung";
+    let IdCard = "1234"
+    let BirthdayCustomer = "1991/07/01";
+    let Email = "Dung@gmail.com"
+    let Address = "Da Nang"
+    let TypeCustomer = "Diamond";
+    let Discount = 10;
+    let numberOfAcccompanying = 2;
+    let TypeRoom = "Business"
+    let RentDay = 10;
+    let TypeSevice = "House";
+    let Age = ageCustomer();
+
+    let select = parseInt(prompt("1.Show Information Customer" + "\n" +
+        "2.Edit Information Customer" + "\n" +
+        "3.Show the amount to be paid after discount" + "\n"));
+
+    switch (select) {
+        case 1:
+            showInformation();
+            break;
+        case 2:
+            editInformation();
+            break;
+        case 3:
+            alert("Total Pays After Discount Condition:" + " " + moneyPays() + "\n");
+            break;
+        default:
+            alert("Failed");
+    }
+
+    //Ham hien thi thong tin khach hang
+    function showInformation() {
+        alert("Information Of Customer" + "\n"
+            + "Name Customer:" + " " + Name + "\n"
+            + "Id Card Customer:" + " " + IdCard + "\n"
+            + "Birthday Customer:" + " " + BirthdayCustomer + "\n"
+            + "Email Customer:" + " " + Email + "\n"
+            + "Address Customer:" + " " + Address + "\n"
+            + "Type Customer:" + " " + TypeCustomer + "\n"
+            + "Discount:" + " " + Discount + "\n"
+            + "Number Of Accompanying:" + " " + numberOfAcccompanying + "\n"
+            + "Type Room:" + " " + TypeRoom + "\n"
+            + "Rent Day:" + " " + RentDay + "\n"
+            + "Type Sevice:" + " " + TypeSevice + "\n"
+        );
+    }
+
+    //Ham chinh sua thong tin khach hang
+    function editInformation() {
+        let NumberEdit = parseInt(prompt("Choose Information Customer you want edit" + "\n"
+            + "1.Name Customer:" + " " + Name + "\n"
+            + "2.Id Card Customer:" + " " + IdCard + "\n"
+            + "3.Birthday Customer:" + " " + BirthdayCustomer + "\n"
+            + "4.Email Customer:" + " " + Email + "\n"
+            + "5.Address Customer:" + " " + Address + "\n"
+            + "6.Type Customer:" + " " + TypeCustomer + "\n"
+            + "7.Discount:" + " " + Discount + "\n"
+            + "8.Number Of Accompanying:" + " " + numberOfAcccompanying + "\n"
+            + "9.Type Room:" + " " + TypeRoom + "\n"
+            + "10.Rent Day:" + " " + RentDay + "\n"
+            + "11.Type Sevice:" + " " + TypeSevice + "\n"))
+        switch (NumberEdit) {
+            case 1:
+                Name = prompt("Enter name you want edit:")
+                break;
+            case 2:
+                IdCard = prompt("Enter Idcard you want edit");
+                break;
+            case 3:
+                Birthday = prompt("Enter Birthday you want edit");
+                break;
+            case 4:
+                Email = prompt("Enter Email You want edit");
+                break;
+            case 5:
+                Address = prompt("Enter Adderess You want edit");
+                break;
+            case 6:
+                TypeCustomer = prompt("Enter Type Customer You want edit");
+                break;
+            case 7:
+                Discount = prompt("Enter Discount You want edit");
+                break;
+            case 8:
+                numberOfAcccompanying = prompt("Enter number of acccompanying You want edit");
+                break;
+            case 9:
+                TypeRoom = prompt("Enter type room You want edit");
+                break;
+            case 10:
+                RentDay = prompt("Enter rent day You want edit");
+                break;
+            case 11:
+                TypeSevice = prompt("Enter type service You want edit");
+                break;
+            default:
+                alert("Failed")
+
+        }
+        showInformation();
+    }
+
+    //ham tinh so tien duoc giam gia
+    function moneyPays() {
+        let moneyPayDay = 0;//gia tien tinh theo ngay phai tra
+        let moneyPays = 0;//so tien khach hang phai thanh toan
+        let moneyDiss = 0;//tong so tien duoc giam gia ngoai Discount
+        //Tinh so tien tinh theo ngay
+        if (TypeSevice == "Villa") {
+            moneyPayDay = 500;
+        } else {
+            if (TypeSevice == "House") {
+                moneyPayDay = 300;
+            } else {
+                moneyPayDay = 100;
+            }
+        }
+        //tinh so tien duoc giam gia ngoai Discount
+        switch (Address) { //giam gia theo dia chi
+            case "Da Nang":
+                moneyDiss += 20;
+                if (Age > 30) {
+                    moneyDiss += 2;
+                } else {
+                    moneyDiss += 1;
+                }
+                break;
+            case "Hue":
+                moneyDiss += 10;
+                break;
+            case "Quang Nam":
+                moneyDiss += 5;
+        }
+        if (RentDay > 7) {     //giam gia theo thoi gian luu tru
+            moneyDiss += 30;
+        } else {
+            if (RentDay >= 5) {
+                moneyDiss += 20;
+            } else {
+                if (RentDay >= 2) {
+                    moneyDiss += 10;
+                }
+            }
+        }
+        switch (TypeCustomer) { //giam gia theo Type Customer
+            case "Diamond":
+                moneyDiss += 15;
+                break;
+            case "Platium":
+                moneyDiss += 10;
+                break;
+            case "Gold":
+                moneyDiss += 5;
+                break;
+            case "Silver":
+                moneyDiss += 2;
+                break;
+            case "Member":
+                break;
+        }
+        //Tong so tien khach hang phai thanh toan
+        moneyPays = RentDay * moneyPayDay * (1 - Discount / 100) - moneyDiss;
+        return moneyPays;
+    }
+
+    //Ham tinh tuoi
+    function ageCustomer() {
+        let CurrentYears = new Date().getFullYear();
+        let birthday = new Date(BirthdayCustomer).getFullYear();
+        let age = CurrentYears - birthday;
+        return age;
+    }
+</script>
+</body>
+</html>
