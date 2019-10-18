@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH BẬC 2</h3>
+<p>phương trình a^2 + bx + c=0</p>
+Nhập a:<input type="text" id="a" value="0"><br>
+Nhập b:<input type="text" id="b" value="0"><br>
+Nhập c:<input type="text" id="c" value="0"><br>
+<input type="button" value="Tính nghiệm" onclick=phuongTrinhBac2()>
+<p id="value"></p>
+<script>
+    function phuongTrinhBac2() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        let delta = b ** 2 - 4 * a * c;
+        let x1;
+        let x2;
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+                    document.getElementById("value").innerHTML = "Phương trình này có vô số nghiệm";
+                } else {
+                    document.getElementById("value").innerHTML = "Phương trình này vô nghiệm";
+                }
+            } else {
+                x1 = -c / b;
+                document.getElementById("value").innerHTML = "Phương trình này có nghiệm duy nhất là" + " " + x1;
+            }
+        } else {
+            if (delta < 0) {
+                document.getElementById("value").innerHTML = "Phương trình này vô nghiệm";
+
+            } else {
+                if (delta > 0) {
+                    let sqrt_delta = Math.sqrt(delta);
+                    x1 = (-b + sqrt_delta) / (2 * a);
+                    x2 = (-b - sqrt_delta) / (2 * a);
+                    document.getElementById("value").innerHTML =
+                        "Phương trình này có 2 nghiệm" + " " + "x1=" + " " + x1 + "<br>"
+                        + "Phương trình này có 2 nghiệm" + " " + "x2=" + " " + x2 + "<br>";
+                } else {
+                    x1 = -b / (2 * a);
+                    document.getElementById("value").innerHTML = "Phương trình này có 1 nghiệm kép là" + " " + x1;
+                }
+            }
+        }
+
+
+    }
+</script>
+</body>
+</html>

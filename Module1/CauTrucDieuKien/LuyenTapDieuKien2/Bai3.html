@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="button" value="Nhập vào cạnh a" onclick="area()">
+<p id="canh a"></p>
+<script>
+    function area() {
+        let a=document.getElementById("a").value;
+        a=parseInt(a);
+        let dienTich=a**2;
+        document.getElementById("canh a").innerHTML="Diện Tích của hình vuông có cạnh bằng"+" "+a+" "+"là"+" "+dienTich;
+    }
+</script>
+</body>
+</html>

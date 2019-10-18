@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH BẬC 1</h3>
+<p>phương trình ax+b=0</p>
+Nhập a:<input type="text" id="a" value="0"><br>
+Nhập b:<input type="text" id="b" value="0"><br>
+<input type="button" value="Tính nghiệm" onclick=area()>
+<p id="value"></p>
+<script>
+    function area() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        if (a == 0) {
+            if(b==0)
+            {
+                document.getElementById("value").innerHTML = "Phương trình này vô số nghiệm";
+            }
+            else {
+                document.getElementById("value").innerHTML = "Phương trình này vô nghiệm";
+            }
+        } else {
+            let x = -b / a;
+            document.getElementById("value").innerHTML = "Phương trình này có nghiệm là:" + " " + x;
+        }
+    }
+</script>
+</body>
+</html>

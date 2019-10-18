@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="met">
+<input type="button" value="Đổi sang feet" onclick=metTofeet()>
+<p id="feet"></p>
+<script>
+    function metTofeet() {
+        let m=document.getElementById("met").value;
+        m=parseInt(m);
+        let ft=m * 3.2808;
+        document.getElementById("feet").innerHTML=ft+" "+"feet";
+    }
+</script>
+
+</body>
+</html>

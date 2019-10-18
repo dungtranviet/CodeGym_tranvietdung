@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>CHƯƠNG TRÌNH TÍNH GIÁ ĐIỆN TIÊU THỤ</h3>
+Xin hãy nhập lượng điện tiêu thụ:<br>
+<input type="text" id="luong dien tieu thu">
+<input type="button" value="Tính Giá Điện" onclick=GiaDien()>
+<p id="Gia dien"></p>
+<script>
+    function GiaDien() {
+        let luongDien = document.getElementById("luong dien tieu thu").value;
+        luongDien = parseInt(luongDien);
+        let level; //phan loai theo luong dien tieu thu
+        //gia 1 kWh theo luong dien tieu thu
+        let kWhLevel_1 = 1678;
+        let kWhLevel_2 = 1734;
+        let kWhLevel_3 = 2014;
+        let kWhLevel_4 = 2536;
+        let kWhLevel_5 = 2834;
+        let kWhLevel_6 = 2927;
+
+        //gia tien dien tieu thu theo muc do
+        let moneyPaysLevel_1 = 0;
+        let moneyPaysLevel_2 = 0;
+        let moneyPaysLevel_3 = 0;
+        let moneyPaysLevel_4 = 0;
+        let moneyPaysLevel_5 = 0;
+        let moneyPaysLevel_6 = 0;
+
+        //Phan loai theo muc do tieu thu
+        if (luongDien <= 50) {
+            level = 1;
+        } else {
+            if (luongDien <= 100) {
+                level = 2;
+            } else {
+                if (luongDien <= 200) {
+                    level = 3;
+                } else {
+                    if (luongDien <= 300) {
+                        level = 4;
+                    } else {
+                        if (luongDien <= 400) {
+                            level = 5;
+                        } else {
+                            level = 6;
+                        }
+                    }
+                }
+            }
+        }
+        //gia dien 1 kWh theo  luong dien tieu thu
+        switch (level) {
+            case 1:
+                moneyPaysLevel_1 = luongDien * kWhLevel_1;
+                break;
+            case 2:
+                moneyPaysLevel_1 = 50 * kWhLevel_1;
+                moneyPaysLevel_2 = (luongDien - 50) * kWhLevel_2;
+                break;
+            case 3:
+                moneyPaysLevel_2 = 100 * kWhLevel_2;
+                moneyPaysLevel_3 = (luongDien - 100) * kWhLevel_3;
+                break;
+            case 4:
+                moneyPaysLevel_3 = 200 * kWhLevel_3;
+                moneyPaysLevel_4 = (luongDien - 200) * kWhLevel_4;
+                break;
+            case 5:
+                moneyPaysLevel_4 = 300 * kWhLevel_4;
+                moneyPaysLevel_5 = (luongDien - 300) * kWhLevel_5;
+                break;
+            case 6:
+                moneyPaysLevel_4 = 400 * kWhLevel_5;
+                moneyPaysLevel_5 = (luongDien - 400) * kWhLevel_6;
+        }
+        //tong so tien phai thanh toan;
+        let moneyPays = moneyPaysLevel_1 + moneyPaysLevel_2 + moneyPaysLevel_3 + moneyPaysLevel_4 + moneyPaysLevel_5 + moneyPaysLevel_6;
+        document.getElementById("Gia dien").innerHTML="Cước phí điện tiêu thụ là:"+" "+moneyPays+" "+"đồng";
+    }
+
+</script>
+</body>
+</html>

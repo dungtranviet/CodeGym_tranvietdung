@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào số tiền vay:<input type="text" id="tienVay"><br>
+Nhập vào lãi suất:<input type="text" id="laiSuat"><br>
+Nhập vào thời hạn vay:<input type="text" id="thoiHan"><br>
+<input type="button" value="Tính lãi suất phải trả" onclick=area()>
+<p id="tienLai"></p>
+<script>
+    function area() {
+        let tienVayBanDau = document.getElementById("tienVay").value;
+        let laiSuat = document.getElementById("laiSuat").value;
+        let thoiHan = document.getElementById("thoiHan").value;
+        tienVayBanDau = parseInt(tienVayBanDau);
+        laiSuat = parseInt(laiSuat);
+        thoiHan = parseInt(thoiHan);
+        let tienLai=tienVayBanDau*(1+laiSuat/100)**thoiHan-tienVayBanDau;
+        document.getElementById("tienLai").innerHTML = "Lãi suất phải trả là" + " " + tienLai;
+    }
+</script>
+</body>
+</html>

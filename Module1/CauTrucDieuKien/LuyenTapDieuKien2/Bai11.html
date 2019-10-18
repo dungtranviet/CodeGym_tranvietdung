@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuNhap =parseInt(prompt("Xin hãy điền thu nhập trong 1 năm của bạn"));
+    let level;
+    let thueSuat;
+    let tienThue;
+    //phan loai thue suat theo muc thu nhap trong nam
+    if (thuNhap <= 60) {
+        level = 1;
+    } else {
+        if (thuNhap <= 120) {
+            level = 2;
+        } else {
+            if (thuNhap <= 216) {
+                level = 3;
+            } else {
+                if (thuNhap <= 384) {
+                    level = 4;
+                } else {
+                    if (thuNhap <= 624) {
+                        level = 5;
+                    } else {
+                        if (thuNhap <= 960) {
+                            level = 6;
+                        } else {
+                            level = 7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    switch (level) {
+        case 1:
+            thueSuat = 5;
+            break;
+        case 2:
+            thueSuat = 10;
+            break;
+        case 3:
+            thueSuat = 15;
+            break;
+        case 4:
+            thueSuat = 20;
+            break;
+        case 5:
+            thueSuat = 25;
+            break;
+        case 6:
+            thueSuat = 30;
+            break;
+        case 7:
+            thueSuat = 35;
+    }
+    tienThue = thuNhap * thueSuat / 1200;
+    alert("Số Tiền Thuế là: " + tienThue + "triệu/1 tháng")
+</script>
+</body>
+</html>

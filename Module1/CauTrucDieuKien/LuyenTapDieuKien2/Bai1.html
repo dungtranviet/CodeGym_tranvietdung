@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Do C">
+<input type="button" name="button" value="Chuyen sang do F" onclick=convertToF()>
+<p id="Do F"></p>
+<script>
+    function convertToF() {
+        let doC = document.getElementById("Do C").value;
+        doC = parseInt(doC);
+        let doF = doC * 9 / 5 + 32;
+        document.getElementById("Do F").innerHTML = doF + " " + "Độ F"
+    }
+</script>
+</body>
+</html>
