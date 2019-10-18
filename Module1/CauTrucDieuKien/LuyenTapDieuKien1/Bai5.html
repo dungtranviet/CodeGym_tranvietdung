@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="Diem Trung Binh"></p>
+<script>
+    let DiemKiemTra = parseInt(prompt("Xin nhap diem kiem tra:"));
+    let DiemGiuaKy = parseInt(prompt("Xin nhap diem giua ky"));
+    let DiemCuoiKy = parseInt(prompt("Xin nhap diem cuoi ky"));
+    let DiemTB = (DiemKiemTra + DiemGiuaKy + DiemCuoiKy) / 3;
+    document.getElementById("Diem Trung Binh").innerHTML="Diem Trung Binh la:"+" "+DiemTB;
+</script>
+</body>
+</html>

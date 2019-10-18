@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="HoaHong"></p>
+<script>
+    let DoanhSo=parseInt(prompt("Xin hãy nhập vào doanh số bán hàng:(Đơn Vị Tỷ Đồng)"));
+    let PhanTramHoaHong=0;
+    let HoaHong=0;
+    if(DoanhSo>10){
+        PhanTramHoaHong=2;
+    }
+    else {
+        if (DoanhSo>5){
+            PhanTramHoaHong=1;
+        }
+        else {
+            PhanTramHoaHong=0.5;
+        }
+    }
+    HoaHong=DoanhSo*PhanTramHoaHong/100;
+    document.getElementById("HoaHong").innerHTML="Hoa Hồng Nhận Được là:"+" "+HoaHong+"Tỷ đồng";
+</script>
+</body>
+</html>

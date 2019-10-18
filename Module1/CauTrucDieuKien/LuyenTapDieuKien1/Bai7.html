@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Tính Cước Phí Điện Thoại Hộ Gia Đình</legend>
+        Lựa chọn dịch vụ:<br>
+        <label><input type="radio" name="Lua chon dich vu" id="NoiMang" checked>Gọi Nội mạng</label><br>
+        <label><input type="radio" name="Lua chon dich vu" id="NgoaiMang">Gọi Ngoại mạng</label><br>
+        Nhập vào thời gian gọi:<br>
+        <input type="text" name="time" id="hour" value="0">tiếng
+        <input type="text" name="time" id="Minute" value="0">phút
+        <input type="text" name="time" id="second" value="0">giây
+        <input type="button" name="button" onclick=totalPays() value="Tinh Cuoc Phi">
+        <p id="Cuoc dien thoai"></p>
+    </fieldset>
+    <script>
+        let hour = document.getElementById("hour");
+        let minute = document.getElementById("Minute");
+        let second = document.getElementById("second");
+        let Choose = document.getElementById("NoiMang");
+        function totalPays() {
+            if (Choose.checked) {
+                CuocPhiNoiMang();
+            } else {
+                CuocPhiNgoaiMang();
+            }
+
+        }
+        function CuocPhiNoiMang() {
+            let totalTimes = parseInt(hour.value) * 3600 + parseInt(minute.value) * 60 + parseInt(second.value);
+            let Block6s = 80;//cuoc phi block 6s dau tien
+            let Block1s = 13.3;//cuoc phi block 1s tiep theo
+            let moneyPays = 0;//tong so tien cuoc dien thoai
+            if (totalTimes > 6) {
+                moneyPays = Block6s + (totalTimes - 6) * Block1s;
+            } else {
+                moneyPays = Block6s;
+            }
+            document.getElementById("Cuoc dien thoai").innerHTML = "Cước phí điện thoại là:" + " " + " " + moneyPays + "đ";
+        }
+        function CuocPhiNgoaiMang() {
+            let totalTimes = parseInt(hour.value) * 3600 + parseInt(minute.value) * 60 + parseInt(second.value);
+            let Block6s = 89.9;//cuoc phi block 6s dau tien
+            let Block1s = 14.85;//cuoc phi block 1s tiep theo
+            let moneyPays = 0;//tong so tien cuoc dien thoai
+            if (totalTimes > 6) {
+                moneyPays = Block6s + (totalTimes - 6) * Block1s;
+            } else {
+                moneyPays = Block6s;
+            }
+            document.getElementById("Cuoc dien thoai").innerHTML = "Cước phí điện thoại là:" + " " + " " + moneyPays + "đ";
+        }
+
+    </script>
+</form>
+</body>
+</html>
