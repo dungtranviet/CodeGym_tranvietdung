@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html">
+        <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -51,8 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CauTrucDieuKien/KiemTraNamNhuan/LeapYear.html" />
-        <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else_If/login.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/Sing.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/Sign.html" />
@@ -102,6 +93,8 @@
         <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/BaiTap.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html" />
+        <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html" />
+        <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html" />
       </list>
     </option>
   </component>
@@ -134,7 +127,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="CauTrucLap" type="462c0819:PsiDirectoryNode" />
-              <item name="SuDungVongLap" type="462c0819:PsiDirectoryNode" />
+              <item name="SuDungVongLapWhile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,7 +176,7 @@
       <workItem from="1571316202731" duration="28746000" />
       <workItem from="1571385536902" duration="2506000" />
       <workItem from="1571411930983" duration="3174000" />
-      <workItem from="1571534467698" duration="15097000" />
+      <workItem from="1571534467698" duration="17411000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -196,7 +189,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126671000" />
+    <option name="totallyTimeSpent" value="128985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -229,20 +222,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="thay doi choi vay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_If_Else/ex01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTapToanTu/Add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BienKieuDuLieuVaToanTu/UngDungMayTinh/Index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -524,8 +503,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
