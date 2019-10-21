@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>Trò chơi đoán số</h2>
+    <input type="button" value="Chơi" onclick="doanSo()">
+
+</form>
+<script>
+    function doanSo() {
+        alert("Đầu tiên xin bạn hãy nhập một khoảng");
+        let min=parseInt(prompt("Từ"));
+        let max=parseInt(prompt("Đến"));
+        while(max<min){
+            alert("Khoảng bạn vừa nhập không hợp lệ,xin hãy nhập lại");
+            min=parseInt(prompt("Từ"));
+            max=parseInt(prompt("Đến"));
+        }
+        let ranDom=Math.floor(Math.random()*(max-min) +min);
+        let i=1;
+        let number=parseInt(prompt("Xin Hãy Dự Đoán Một Số Trong Khoảng Bạn Vừa Nhập"));
+        while (i<3){
+
+            if(number==ranDom){
+                alert("Xin Chúc Mừng!Bạn Đã Dự Đoán Đúng");
+                break;
+            }
+            else {
+                number=parseInt(prompt("Bạn đã nhập sai,xin mời nhập lại (bạn còn"+(3-i)+" "+"Lần)"));
+            }
+            i++;
+        }
+        if(number!==ranDom){
+            alert("bạn đã dự đoán sai,số đó là :"+ranDom);
+        }
+
+    }
+</script>
+</body>
+</html>
