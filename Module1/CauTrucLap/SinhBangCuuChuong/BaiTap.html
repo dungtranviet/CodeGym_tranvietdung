@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>BẢNG CỬU CHƯƠNG</h2>
+<script>
+    let sout="<table border='1' cellspacing='0' cellpadding='3'>";
+    let i;
+    for (i=1;i<10;i++){
+        let j;
+        sout+="<tr>";
+        for(j=1;j<10;j++){
+            sout+="<td>"+i+" "+"x"+" "+j+" "+"="+" "+i*j+"</td>"
+        }
+        sout+="</tr>";
+    }
+    sout+="</table>";
+    document.write(sout);
+</script>
+</body>
+</html>
