@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CauTrucLap/VongLapDoWhile/dowhilesample.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CauTrucLap/VonglapLongNhau/baiTap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,29 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CauTrucLap/VongLapDoWhile/dowhilesample.html">
+        <entry file="file://$PROJECT_DIR$/CauTrucLap/VonglapLongNhau/baiTap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="340">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -59,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/Sing.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/Sign.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/bai1.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTap_Switch_Case/Bai2.html" />
@@ -110,6 +91,7 @@
         <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/VongLapDoWhile/dowhilesample.html" />
+        <option value="$PROJECT_DIR$/CauTrucLap/VonglapLongNhau/baiTap.html" />
       </list>
     </option>
   </component>
@@ -126,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,17 +121,10 @@
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="CauTrucLap" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="CauTrucLap" type="462c0819:PsiDirectoryNode" />
-              <item name="VongLapDoWhile" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,7 +167,8 @@
       <workItem from="1571316202731" duration="28746000" />
       <workItem from="1571385536902" duration="2506000" />
       <workItem from="1571411930983" duration="3174000" />
-      <workItem from="1571534467698" duration="18750000" />
+      <workItem from="1571534467698" duration="19395000" />
+      <workItem from="1571621199693" duration="2595000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -204,7 +181,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130324000" />
+    <option name="totallyTimeSpent" value="133564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -237,13 +214,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="thay doi choi vay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BienKieuDuLieuVaToanTu/Bien_KieuDuLieu_ToanTu/Bai1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BienKieuDuLieuVaToanTu/Bien_KieuDuLieu_ToanTu/Bai2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -499,41 +469,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/BaiTap.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html">
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/BaiTap.html" />
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai1.html" />
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLap/Bai2.html" />
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/VongLapDoWhile/dowhilesample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/VongLapDoWhile/dowhilesample.html">
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/SuDungVongLapWhile/Bai1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CauTrucLap/VonglapLongNhau/baiTap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>
