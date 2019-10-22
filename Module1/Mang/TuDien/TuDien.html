@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào từ cần tìm kiếm : <input type="text" id="text value"><br>
+<input type="button" value="Tìm kiếm" onclick="TuDien()">
+<p id="result"></p>
+<script>
+    function TuDien() {
+        let English = ["dog", "cat", "bird", "fish", "mouse", "earth", "moon", "car", "number", "computer"];
+        let Vietnamese = ["chó", "mèo", "chim", "cá", "chuột", "trái đất", "mặt trăng", "xe oto", "chữ số", "máy tính"];
+        let TxtValue = document.getElementById("text value").value;
+        if (English.indexOf(TxtValue) !== -1) {
+            let index = English.indexOf(TxtValue);
+            document.getElementById("result").innerHTML = TxtValue + " Có nghĩa là " + Vietnamese[index];
+        } else {
+            document.getElementById("result").innerHTML = "Từ bạn vừa nhập không tồn tại";
+        }
+    }
+</script>
+</body>
+</html>
