@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mang/TimGiaTriLonNhatTrongMang/baiTap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mang/CaroGame/CaroSimple.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,10 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mang/TimGiaTriLonNhatTrongMang/baiTap.html">
+        <entry file="file://$PROJECT_DIR$/Mang/CaroGame/CaroSimple.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="408">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -44,7 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CaseStudy/#2CauTrucDieuKien/YeuCau2.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTapDieuKien1/Bai7.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTapDieuKien2/Bai1.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/LuyenTapDieuKien2/Bai2.html" />
@@ -95,6 +94,7 @@
         <option value="$PROJECT_DIR$/Mang/DaoNguocMang/baiTap.html" />
         <option value="$PROJECT_DIR$/Mang/TimGiaTriTrongMang/baiTap.html" />
         <option value="$PROJECT_DIR$/Mang/TimGiaTriLonNhatTrongMang/baiTap.html" />
+        <option value="$PROJECT_DIR$/Mang/CaroGame/CaroSimple.html" />
       </list>
     </option>
   </component>
@@ -128,7 +128,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="Mang" type="462c0819:PsiDirectoryNode" />
-              <item name="TimGiaTriLonNhatTrongMang" type="462c0819:PsiDirectoryNode" />
+              <item name="CaroGame" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,7 +195,7 @@
       <workItem from="1571639071814" duration="13667000" />
       <workItem from="1571663583623" duration="2775000" />
       <workItem from="1571666412822" duration="2889000" />
-      <workItem from="1571714282870" duration="5323000" />
+      <workItem from="1571714282870" duration="7528000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -208,7 +208,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167641000" />
+    <option name="totallyTimeSpent" value="169846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -241,13 +241,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="thay doi choi vay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTapDieuKien2/Bai1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CauTrucDieuKien/LuyenTapDieuKien2/Bai11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -512,8 +505,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mang/TimGiaTriLonNhatTrongMang/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mang/CaroGame/CaroSimple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
         </state>
       </provider>
     </entry>
