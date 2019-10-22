@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let num=3;
+    let a=1;
+    let b=0;
+    let temp;
+    let number=parseInt(prompt("nhập vào số lượng số fibonacy"))
+    let fibo="0,1";
+    while (num<=number)
+    {
+        temp=a;
+        a+=b;
+        b=temp;
+        fibo+=","+a;
+        num++;
+    }
+    document.write(fibo);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let txt = "";
+    let i;
+    let j;
+    for (i = 0; i < 7; i++) {
+        if (i == 0 || i == 6) {
+            for (j = 0; j < 20; j++) {
+                txt += "*";
+            }
+        }
+        else {
+            for (j=0;j<20;j++){
+                if(j==0||j==19){
+                    txt+="*";
+                }
+                else {
+                    txt+="&nbsp"+"&nbsp"
+                }
+            }
+        }
+        txt += "<br>";
+    }
+    document.write(txt);
+</script>
+</body>
+</html>

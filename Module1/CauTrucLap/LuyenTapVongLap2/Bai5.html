@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset><legend>Chương trình tính lãi suất ngân hàng</legend>
+    <form>
+        lãi suất cho vay hàng tháng:<input type="text" id="lai suat" value="5">%<br>
+        thời hạn vay:<input type="text" id="thoi han" value="14">tháng<br>
+        số tiền cần vay:<input type="text" id="so tien vay">triệu<br>
+        <input type="button" value="Tính Tiền Lãi" onclick="tinhTienLai()">
+        <p id="tien lai"></p>
+<script>
+    function tinhTienLai(){
+        let laiSuat=parseInt(document.getElementById("lai suat").value);
+        let thoiHan=parseInt(document.getElementById("thoi han").value);
+        let tienVay=parseInt(document.getElementById("so tien vay").value);
+        let tienLai;
+        let i;
+        let tienTra=tienVay;
+        for(i=1;i<=thoiHan;i++){
+            tienTra+=tienTra*laiSuat/100;
+        }
+        tienLai=tienTra-tienVay;
+        document.getElementById("tien lai").innerHTML="Số tiền lãi phải trả (ngoài khoản vay ban đầu) là:"+tienLai+"Triệu";
+    }
+</script>
+    </form>
+</fieldset>
+</body>
+</html>

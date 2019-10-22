@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let txt1 = "";
+    let txt2 = "";
+    let txt3 = "";
+    let txt4 = "";
+    let i;
+    let j;
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+            txt1 += "*";
+        }
+        txt1 += "<br>";
+    }
+    document.write(txt1);
+    document.write("<br>");
+    for (i = 5; i > 0; i--) {
+        for (j = 1; j <= i; j++) {
+            txt2 += "*";
+        }
+        txt2 += "<br>"
+    }
+    document.write(txt2);
+    document.write("<br>");
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5 - i; j++) {
+            txt3 += "&nbsp" + "&nbsp";
+        }
+        for (j = 5 - i; j < 5; j++) {
+            txt3 += "*"
+        }
+        txt3 += "<br>";
+    }
+    document.write(txt3);
+    document.write("<br>");
+    for (i=1;i<=5;i++){
+        for (j=1;j<i;j++){
+            txt4+="&nbsp"+"&nbsp";
+        }
+        for(j=i;j<=5;j++){
+            txt4+="*";
+        }
+        txt4+="<br>";
+    }
+    document.write(txt4);
+</script>
+</body>
+</html>
