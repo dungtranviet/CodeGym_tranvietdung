@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường trong chuỗi vừa nhập sang thành dạng chữ hoa</h2>
+<script>
+    let txtValue = prompt("type the String");
+    let txtLower = txtValue.toLowerCase();
+    let txtUpper = txtValue.toUpperCase();
+    let newTxt = new Array();
+    for (let i = 0; i < txtValue.length; i++) {
+        if (txtValue[i] == txtLower[i]) {
+            newTxt.push(txtValue[i].toUpperCase());
+        } else {
+            if (txtValue[i] == txtUpper[i]) {
+                newTxt.push(txtValue[i].toLowerCase());
+            } else {
+                newTxt.push(txtValue[i]);
+            }
+        }
+    }
+    document.write("The first string: " + txtValue);
+    document.write("<br>");
+    document.write("new string is " + newTxt.join(""));
+</script>
+</body>
+</html>

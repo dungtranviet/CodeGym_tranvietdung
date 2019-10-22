@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("Type a number");
+    let newArrays=new Array();
+    newArrays[0]=str[0];
+    for(let i=1;i<str.length;i++){
+        if((str[i]%2==0)||(str[i-1]%2==0)){
+            newArrays.push("-",str[i]);
+
+        }
+        else {
+            newArrays.push(str[i]);
+        }
+    }
+    document.write("the first arrays:"+str);
+    document.write("<br>")
+    document.write("the new array:"+newArrays);
+</script>
+</body>
+</html>

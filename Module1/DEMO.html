@@ -6,10 +6,18 @@
 </head>
 <body>
 <script>
-let a=[1,92,82,1,2,3];
-a.forEach(function (phantu) {
-    document.write(phantu+" ");
-})
+    let txtValue=prompt("type the String");
+    let txtLower=txtValue.toLowerCase();
+    let txtUpper=txtValue.toUpperCase();
+    let newTxt=new Array();
+    if(txtValue[0]==txtUpper[0]){
+        alert(" can phai chuyen sang chu thuong")
+    }
+    else {
+        if(txtValue[0]==txtLower[0]){
+            alert(" can phai chuyen sang chu hoa")
+        }
+    }
 </script>
 </body>
 </html>
