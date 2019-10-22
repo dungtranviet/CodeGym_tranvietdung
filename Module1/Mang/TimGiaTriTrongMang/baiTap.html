@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrays=[-3, 5, 1, 3, 2, 10];;
+    let number=parseInt(prompt("Type a number:"));
+    let i;
+    let check=false;
+    for(i=0;i<arrays.length;i++){
+        if(arrays[i]==number){
+            alert(number+" found at "+i);
+            check=true;
+        }
+    }
+    if(!check){
+        alert(number+" not found in the arrays")
+    }
+</script>
+</body>
+</html>
