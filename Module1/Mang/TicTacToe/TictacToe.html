@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Game Caro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="Begin()">
+<div class="container khung mt-4">
+    <div class="row hang">
+        <div id="1-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="1-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="2-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="2-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="3-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="3-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="4-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="4-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="5-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="5-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="6-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="6-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="7-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="7-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="8-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="8-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="9-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="9-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="10-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="10-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="11-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="11-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+
+    <div class="row hang">
+        <div id="12-1" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-2" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-3" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-4" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-5" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-6" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-7" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-8" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-9" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-10" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-11" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+        <div id="12-12" onclick="dienXO(this.id)"
+             class="col-1 oCaRo d-flex justify-content-center align-items-center"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <button onclick="Back()" class="btn btn-danger mr-5">Back</button>
+        <p>Bản quyền: TRỊNH NGỌC TUẤN</p>
+    </div>
+    <script src="./myJs.js"></script>
+
+</div>
+</body>
+
+</html>

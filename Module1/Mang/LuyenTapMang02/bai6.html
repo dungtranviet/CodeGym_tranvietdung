@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let Chuoi=prompt("Nhập vào một chuỗi kí tự:");
+    let Chuoi="Dung-tran-viet";
+    let Chuoi_Ban_dau=Chuoi;
+    Chuoi=Chuoi.split("");
+    let Index=Chuoi.indexOf("-");
+    while (Index!=-1)
+    {
+        Chuoi[Index]="_";
+        Index=Chuoi.indexOf("-");
+    }
+    Chuoi=Chuoi.join("");
+    document.write("Trước:"+Chuoi_Ban_dau);
+    document.write("<br>");
+    document.write("Sau:"+Chuoi);
+</script>
+</body>
+</html>

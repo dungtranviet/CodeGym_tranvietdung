@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temp;
+    let mang=[58,-102,15,23,-56,0,1,8,15,15];
+    for(let i=0;i<mang.length-1;i++){
+        for (let j=i+1;j<mang.length;j++){
+            if(mang[i]<mang[j]){
+                temp=mang[i];
+                mang[i]=mang[j];
+                mang[j]=temp;
+            }
+        }
+    }
+    document.write("Mảng sau khi sắp xếp theo thứ tự giảm dần:"+mang);
+</script>
+</body>
+</html>

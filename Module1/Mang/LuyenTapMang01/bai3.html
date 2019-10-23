@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[58,-102,59,23,56,0,1,8,9,15];
+   let numberMax=mang[0];
+   let total=0;
+   let index=0;
+    for(let i=1;i<mang.length;i++)
+    {
+        if(mang[i]>numberMax){
+            numberMax=mang[i];
+            index=i;
+        }
+        total+=mang[i];
+    }
+    let Tb=total/mang.length;
+    document.write("Số lớn nhất trong mang là "+numberMax+" ở vị tri index = "+index);
+    document.write("<br>");
+    document.write("Trung bình của các phần tử trong mảng là : "+Tb);
+
+</script>
+</body>
+</html>

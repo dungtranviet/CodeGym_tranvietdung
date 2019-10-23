@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[58,-102,15,23,-56,0,1,8,15,15];
+    let number=parseInt(prompt("Type a number:"));
+    let checkIndex=mang.indexOf(number); //Kiểm tra xem có số vừa nhập trong mảng hay không
+    let soLuongDaXoa=0;
+    while (checkIndex!=-1){
+
+        for(let i=checkIndex;i<mang.length-soLuongDaXoa;i++){
+           mang[i]=mang[i+1];
+        }
+        soLuongDaXoa++;
+        checkIndex=mang.indexOf(number);//kiểm tra xem số đó còn tồn tại trong mảng không
+    }
+    document.write(mang);
+</script>
+</body>
+</html>

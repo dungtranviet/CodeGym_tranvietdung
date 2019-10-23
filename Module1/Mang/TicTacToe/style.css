@@ -1,0 +1,28 @@
+.khung{
+    width: 450px;
+    position: relative;
+
+}
+
+.hang{
+    border: 1px solid rgb(77, 77, 77);
+    height: 40px;
+}
+
+.oCaRo{
+    border: 1px solid rgb(77, 77, 77);
+    background-color: rgb(169, 199, 189);
+    font-size: 20px;
+    font-weight: 800;
+    color: brown;
+}
+
+.ketQua{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 150px;
+    text-align: center;
+    color: rgb(122, 46, 46);
+    line-height: 150px;
+}
