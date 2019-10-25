@@ -6,48 +6,19 @@
 </head>
 <body>
 <script>
-    let Chuoi = "  Tran    Viet Dung     CodeGym     Da Nang    ";
-    Chuoi = Chuoi.split("");
-    let Counter = 0;
-    let OkCheck = false;
-    checkFirst();
-    function checkFirst() {
-        if (Chuoi.length == 0) {
-            Counter = 0;
-        } else {
-            Counter = 1;
-            checkTu(0);
-
+    let Text = "  Tran    Viet Dung     CodeGym     Da Nang  Viet       Nam       ";
+    let TextCover=Text.trim();
+    let Counter=0;
+    if(TextCover.length!=0){
+        Counter=1;
+        while (TextCover.indexOf(" ")!=-1) {
+            Counter+=1;
+            let Index=TextCover.indexOf(" ");
+            TextCover=TextCover.substring(Index,);
+            TextCover=TextCover.trim();
         }
     }
-
-    function checkTu(n) {
-        let i = n;
-        if (i < Chuoi.length - 1) {
-            if ((Chuoi[i] == " ") && (OkCheck == false)) { //Kiểm tra kí tự đầu tiên có phải là dấu cách hay không
-                checkTu(i + 1);                            //Cờ OkCheck chỉ dùng để kiểm tra lúc đầu
-            } else {                                        //Đến khi phát hiện kí tự khác khoảng trống thì bật lên true
-                OkCheck = true;
-                if (Chuoi[i] == " ") {
-                    if (Chuoi[i + 1] == " ") {
-                        i++;
-                        checkTu(i);
-                    } else {
-                        Counter++;
-                        i++;
-                        checkTu(i);
-                    }
-
-                } else {
-                    i++;
-                    checkTu(i);
-                }
-            }
-
-
-        }
-    }
-    document.write("Số lượng từ là :" + Counter);
+    alert("Số lượng từ là "+Counter);
 </script>
 </body>
 </html>
