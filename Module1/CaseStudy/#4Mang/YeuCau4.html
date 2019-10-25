@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Choose = prompt("1.Add new customer" + "\n" + "2.Delete customer");
+    Choose = parseFloat(Choose);
+    let arrCustomer = new Array();
+    let listCustomer = ["Hoang", "Mai", "Hong", "Yen", "Viet", "Anh", "Hai", "Toan", "Vuong", "Quang"];
+    switch (Choose) {
+        case  1:
+            addNewCustomer();
+            break;
+        case 2:
+            deCustomer();
+            break;
+        default:
+            alert("Number is invalid!!")
+    }
+
+    function addNewCustomer() {
+        let Number = prompt("Add number of customer you want to add:");
+        Number = parseInt(Number);
+        for (let i = 0; i < Number; i++) {
+            arrCustomer[i] = prompt("");
+        }
+        showList(arrCustomer);
+        sapXepArr(arrCustomer);
+        showList(arrCustomer);
+    }
+
+    function showList() {
+        let temp = "";
+        for (let i = 0; i < arrCustomer.length; i++) {
+            temp += (i + 1) + ". " + arrCustomer[i] + "\n";
+        }
+        alert(temp);
+    }
+
+    function sapXepArr() {
+        arrCustomer = arrCustomer.sort();
+    }
+
+    function deCustomer() {
+        let list = "";
+        for (let i = 0; i < listCustomer.length; i++) {
+            list += (i + 1) + " . ";
+            list += listCustomer[i] + "\n";
+        }
+        let Index = prompt("Choose customer you want to delete:" + "\n" + list);
+        Index = parseInt(Index);
+        switch (Index) {
+            case 1:
+                deleteArr(0);
+                break;
+            case 2:
+                deleteArr(1);
+                break;
+            case 3:
+                deleteArr(2);
+                break;
+            case 4:
+                deleteArr(3);
+                break;
+            case 5:
+                deleteArr(4);
+                break;
+            case 6:
+                deleteArr(5);
+                break;
+            case 7:
+                deleteArr(6);
+                break;
+            case 8:
+                deleteArr(7);
+                break;
+            case 9:
+                deleteArr(8);
+                break;
+            case 10:
+                deleteArr(9);
+                break;
+            default:
+                alert("Number is Invalid");
+        }
+        let temp = "List Customer after delete"+ "\n";
+        for (let i = 0; i < listCustomer.length; i++) {
+            temp += (i + 1) + ". " + listCustomer[i] + "\n";
+        }
+        alert(temp);
+    }
+
+    function deleteArr(a) {
+           for(a;a<listCustomer.length;a++){
+               listCustomer[a]=listCustomer[a+1];
+           }
+           listCustomer.length--;
+    }
+</script>
+</body>
+</html>
