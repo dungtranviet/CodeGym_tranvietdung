@@ -10,8 +10,8 @@
     let IdCard = typeIdcard();
     let Birthday = typeBirthday();
     let Email = typeEmail();
-    let Address = prompt("Enter Address Customer");
-    let Type = prompt("Enter Type Customer");
+    let Address = typeAddress();
+    let TypeCus = typeCustomer();
     let Discount = typeDiscount();
     let NOA = typeACPN();       //"Enter Number Of Acccompannying:"
     let TypeRoom = prompt("Enter Type Room");
@@ -24,7 +24,7 @@
         + "Birthday Customer:" + " " + Birthday + "\n"
         + "Email Customer:" + " " + Email + "\n"
         + "Address Customer:" + " " + Address + "\n"
-        + "Type Customer:" + " " + Type + "\n"
+        + "Type Customer:" + " " + TypeCus + "\n"
         + "Discount:" + " " + Discount + "\n"
         + "Number Of Accompanying:" + " " + NOA + "\n"
         + "Type Room:" + " " + TypeRoom + "\n"
@@ -100,9 +100,9 @@
         let rentDay;
         while(inValid){
             rentDay=prompt("Enter Rent Day");
-            let Valid1=!isNaN(rentDay);//kiểm tra số vừa nhập có phải là một số thực hay không;
+            let Valid1=!isNaN(rentDay);//kiểm tra số vừa nhập có phải là một số hay không;
             rentDay=parseFloat(rentDay);
-            let Valid2=(Number.isInteger(rentDay))&&(rentDay>0);// số phải  >0;
+            let Valid2=(Number.isInteger(rentDay))&&(rentDay>0);//kiểm tra có phải số thực lớn hơn 0;
             if(Valid1&&Valid2){
                 inValid=false;
             }
@@ -118,9 +118,9 @@
         let Discount;
         while(inValid){
             Discount=prompt("Enter Discount");
-            let Valid1=!isNaN(Discount); //kiểm tra số vừa nhập có phải là một số thực hay không;
-            Discount=parseFloat(Discount);
-            let Valid2=Number.isInteger(Discount)&&(Discount>0) ;//có phải số nguyên   >0;
+            let Valid1=!isNaN(Discount); //kiểm tra số vừa nhập có phải là một số hay không;
+            let temp=parseFloat(Discount);
+            let Valid2=Number.isInteger(temp)&&(temp>0) ;//kiểm tra có phải số thực >0;
             if(Valid1&&Valid2){
                 inValid=false;
             }
@@ -136,15 +136,16 @@
         let ACPNvalue;
         while (inValid) {
             ACPNvalue = prompt("Enter Number Of Acccompannying:");
-            let Valid1=!isNaN(ACPNvalue);            //kiểm tra số vừa nhập có phải là một số thực hay không;
+            let Valid1=!isNaN(ACPNvalue);            //kiểm tra số vừa nhập có phải là một số  hay không;
             ACPNvalue = parseFloat(ACPNvalue);
-            let Valid2=(Number.isInteger(ACPNvalue)) && (ACPNvalue > 0);//có phải là số nguyên lớn hơn 0
+            let Valid2=(Number.isInteger(ACPNvalue)) && (ACPNvalue > 0);//kiểm tra có phải số thực >0
             if (Valid1&&Valid2) {
                 inValid = false;
             } else {
                 alert("Acccompannying Is Invalid!!Please Try Again");
             }
         }
+        return ACPNvalue;
     }
     //NHẬP VÀ KIỂM TRA TÊN
     function typeName() {
@@ -164,6 +165,48 @@
         }
         temp+=Name[0].toUpperCase();
         temp+=Name.substring(1,).toLowerCase();
+        return temp;
+    }
+
+    //Nhập và chuẩn hóa dữ liệu địa chỉ
+    function typeAddress() {
+        let Address="";
+        let temp="";
+        while(Address.length==0){
+            Address=prompt("Enter Address Customer");
+            Address=Address.trim();
+        }
+        while (Address.indexOf(" ")!=-1)
+        {
+            let end =Address.indexOf(" ");
+            let str=Address.substring(0,end);
+            temp+=str[0].toUpperCase();
+            temp+=str.substring(1,end).toLowerCase()+ ' ';
+            Address=Address.substring(end,).trim();
+        }
+        temp+=Address[0].toUpperCase();
+        temp+=Address.substring(1,).toLowerCase();
+        return temp;
+    }
+
+    //Nhập và chuẩn hóa dữ liệu loại khách hàng
+    function typeCustomer() {
+        let TypeCusTomer="";
+        let temp="";
+        while(TypeCusTomer.length==0){
+            TypeCusTomer=prompt("Enter Type Customer");
+            TypeCusTomer=TypeCusTomer.trim();
+        }
+        while (TypeCusTomer.indexOf(" ")!=-1)
+        {
+            let end =TypeCusTomer.indexOf(" ");
+            let str=TypeCusTomer.substring(0,end);
+            temp+=str[0].toUpperCase();
+            temp+=str.substring(1,end).toLowerCase()+ ' ';
+            TypeCusTomer=TypeCusTomer.substring(end,).trim();
+        }
+        temp+=TypeCusTomer[0].toUpperCase();
+        temp+=TypeCusTomer.substring(1,).toLowerCase();
         return temp;
     }
 </script>
