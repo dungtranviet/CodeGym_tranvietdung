@@ -102,7 +102,7 @@
             rentDay=prompt("Enter Rent Day");
             let Valid1=!isNaN(rentDay);//kiểm tra số vừa nhập có phải là một số thực hay không;
             rentDay=parseFloat(rentDay);
-            let Valid2=(Number.isInteger(rentDay))&&(rentDay>0);//kiểm tra số vừa nhập có phải là một số thực hay không;
+            let Valid2=(Number.isInteger(rentDay))&&(rentDay>0);// số phải  >0;
             if(Valid1&&Valid2){
                 inValid=false;
             }
@@ -119,8 +119,8 @@
         while(inValid){
             Discount=prompt("Enter Discount");
             let Valid1=!isNaN(Discount); //kiểm tra số vừa nhập có phải là một số thực hay không;
-            let temp=parseFloat(Discount);
-            let Valid2=Number.isInteger(temp)&&(temp>0) ;//kiểm tra số vừa nhập có phải là một số thực hay không;
+            Discount=parseFloat(Discount);
+            let Valid2=Number.isInteger(Discount)&&(Discount>0) ;//có phải số nguyên   >0;
             if(Valid1&&Valid2){
                 inValid=false;
             }
@@ -138,7 +138,7 @@
             ACPNvalue = prompt("Enter Number Of Acccompannying:");
             let Valid1=!isNaN(ACPNvalue);            //kiểm tra số vừa nhập có phải là một số thực hay không;
             ACPNvalue = parseFloat(ACPNvalue);
-            let Valid2=(Number.isInteger(ACPNvalue)) && (ACPNvalue > 0);//kiểm tra số vừa nhập có phải số nguyên lớn hơn 0;
+            let Valid2=(Number.isInteger(ACPNvalue)) && (ACPNvalue > 0);//có phải là số nguyên lớn hơn 0
             if (Valid1&&Valid2) {
                 inValid = false;
             } else {
