@@ -17,7 +17,6 @@
     let TypeRoom = prompt("Enter Type Room");
     let RentDay = typeRentday();
     let TypeSevice = prompt("Enter Type Sevice");
-
     alert("Information Of Customer" + "\n"
         + "Name Customer:" + " " + Name + "\n"
         + "Id Card Customer:" + " " + IdCard + "\n"
@@ -31,7 +30,6 @@
         + "Rent Day:" + " " + RentDay + "\n"
         + "Type Sevice:" + " " + TypeSevice + "\n"
     );
-
     //HÀM NHẬP VÀ KIỂM TRA TÍNH HỢP LỆ CỦA ID CARD
     function typeIdcard() {
         let isIdNumber = prompt("Enter Id Customer :");
@@ -41,7 +39,6 @@
         }
         return isIdNumber;
     }
-
     //HÀM NHẬP VÀ KIỂM TRA TÍNH HỢP LỆ CỦA EMAIL
     function typeEmail() {
         let isEmail;
@@ -94,7 +91,6 @@
         return birthDay;
     }
     //NHẬP VÀ KIỂM TRA RENTDAY
-
     function typeRentday() {
         let inValid=true;
         let rentDay;
@@ -167,7 +163,6 @@
         temp+=Name.substring(1,).toLowerCase();
         return temp;
     }
-
     //Nhập và chuẩn hóa dữ liệu địa chỉ
     function typeAddress() {
         let Address="";
@@ -188,7 +183,6 @@
         temp+=Address.substring(1,).toLowerCase();
         return temp;
     }
-
     //Nhập và chuẩn hóa dữ liệu loại khách hàng
     function typeCustomer() {
         let TypeCusTomer="";
