@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numValue=parseInt(prompt("a = "));
+    alert("Giai Thừa Của a là :" +luyThua(numValue));
+    function luyThua(a) {
+        if(a==0) return 1;
+        let kq=1;
+        while (a>0){
+            kq*=a;
+            a--;
+        }
+        return kq;
+    }
+</script>
+</body>
+</html>

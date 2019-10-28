@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=[1,25,9,-5,8,25,69,32,15];
+    processArr(mang);
+    function processArr(arr) {
+        let minIndex=0;
+        let maxIndex=arr.length-1;
+        while (minIndex < maxIndex) {
+            let temp=arr[minIndex];
+            arr[minIndex]=arr[maxIndex];
+            arr[maxIndex]=temp;
+            minIndex++;
+            maxIndex--;
+        }
+        document.write("mảng số nguyên sau khi đảo là : "+arr);
+    }
+</script>
+</body>
+</html>

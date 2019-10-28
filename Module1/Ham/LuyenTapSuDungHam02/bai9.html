@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [1, 58, 6, 3, 68, 21, -6, 1, 5, 25, 3, 1, 6, 8, 2, 5, 8, 7, 2, 6, 13, "tu", "hoang", "tu"];
+    let str = prompt("Nhập vào một ký tự");
+    alert(checkIndex(str));
+    function checkIndex(str) {
+        if (!isNaN(str)) {
+            str = parseFloat(str);
+        }
+        if (!mang.includes(str)) {
+            alert(mang.findIndex(str));
+            return -1;
+        }
+        let Counter = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (str == mang[i]) {
+                Counter++;
+            }
+        }
+        return Counter;
+    }
+</script>
+</body>
+</html>
