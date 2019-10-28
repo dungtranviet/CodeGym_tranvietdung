@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star=["Polaris","Aldebaran" ,"Deneb" ,"Vega" ,"Altair" , "Dubhe","Regulus" ];
+    let stellar=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+    main();
+    function main() {
+        let valInput=prompt("Nhâp vào tên ngôi sao bạn muốn kiểm tra :");
+       let Index= findStellar(valInput);
+       if(Index==-1){
+           alert("Không tìm thấy ngôi sao");
+       }
+       else {
+           alert(valInput+ " thuộc chòm sao "+ stellar[Index]);
+       }
+    }
+    function findStellar(str){
+        str=str.toLowerCase();
+        for(let i=0;i<star.length;i++){
+            if(str==star[i].toLowerCase()){
+                return i;
+            }
+        }
+        return -1;
+    }
+</script>
+</body>
+</html>
