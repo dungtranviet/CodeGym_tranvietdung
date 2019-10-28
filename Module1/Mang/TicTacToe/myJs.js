@@ -47,8 +47,8 @@ function tinhToaDo(IdToaDo) {
 }
 
 function CheckVictory(a, b, value) {
-    checkCheo1_chieuDuong(a, b, value);
-    checkCheo1_chieuAm(a, b, value);
+    checkRow_chieuDuong(a, b, value);
+    checkRow_chieuAm(a, b, value);
     if (Counter >= 4) {
         alert("Chien thang theo hang");
         Counter = 0;
