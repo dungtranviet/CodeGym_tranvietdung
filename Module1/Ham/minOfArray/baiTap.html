@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1= [3, 5, 1, 8, -3, 7, 8];
+    let arr2= [7, 12, 6, 9, 20, 56, 89];
+    let arr3= [];
+    let arr4= [0, 0, 0, 0, 0, 0];
+    function minArray(arr){
+       if(arr.length==0){
+           return -1;
+       }
+       let min=arr[0];
+       let index=0;
+       for(let i=0;i<arr.length;i++){
+           if(arr[i]<min){
+               min=arr[i];
+               index=i;
+           }
+       }
+       return index;
+    }
+    function processResult(arr){
+        let result=minArray(arr);
+        if(result==-1){
+            return "array is empty";
+        }
+        return arr[result];
+    }
+    let min1=processResult(arr1);
+    let min2=processResult(arr2);
+    let min3=processResult(arr3);
+    let min4=processResult(arr4);
+    document.write(min1+"<br>");
+    document.write(min2+"<br>");
+    document.write(min3+"<br>");
+    document.write(min4+"<br>");
+</script>
+</body>
+</html>

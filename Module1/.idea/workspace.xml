@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Ham/ChuyenDoiNhietDo/baiTap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ham/minOfArray/baiTap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -20,20 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ham/TaoVaGoiHam/baiTap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ham/ChuyenDoiNhietDo/baiTap.html">
+        <entry file="file://$PROJECT_DIR$/Ham/minOfArray/baiTap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="183">
+              <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -55,7 +46,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CauTrucLap/LuyenTapVongLap2/Bai5.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/LuyenTapVongLap2/Bai6.html" />
         <option value="$PROJECT_DIR$/CauTrucLap/LuyenTapVongLap2/Bai1.html" />
         <option value="$PROJECT_DIR$/CauTrucDieuKien/mayTinhDonGian/MayTinh.html" />
@@ -106,6 +96,7 @@
         <option value="$PROJECT_DIR$/Demo/bghghgf.html" />
         <option value="$PROJECT_DIR$/Ham/TaoVaGoiHam/baiTap.html" />
         <option value="$PROJECT_DIR$/Ham/ChuyenDoiNhietDo/baiTap.html" />
+        <option value="$PROJECT_DIR$/Ham/minOfArray/baiTap.html" />
       </list>
     </option>
   </component>
@@ -138,7 +129,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="Ham" type="462c0819:PsiDirectoryNode" />
-              <item name="ChuyenDoiNhietDo" type="462c0819:PsiDirectoryNode" />
+              <item name="minOfArray" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,7 +209,7 @@
       <workItem from="1571978215449" duration="7383000" />
       <workItem from="1572013678556" duration="4308000" />
       <workItem from="1572074044476" duration="14820000" />
-      <workItem from="1572229727718" duration="3176000" />
+      <workItem from="1572229727718" duration="5147000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -231,7 +222,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293044000" />
+    <option name="totallyTimeSpent" value="295015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -280,13 +271,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CauTrucLap/LuyenTapVongLap2/Bai5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CauTrucLap/LuyenTapVongLap2/baitap4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -594,6 +578,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ham/ChuyenDoiNhietDo/baiTap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Ham/TaoVaGoiHam/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -601,10 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ham/ChuyenDoiNhietDo/baiTap.html">
+    <entry file="file://$PROJECT_DIR$/Ham/minOfArray/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="183">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
         </state>
       </provider>
     </entry>
