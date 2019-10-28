@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h3>KIỂM TRA XEM CÓ PHẢI LÀ SỐ NGUYÊN TỐ HAY KHÔNG</h3>
+    Nhập vào số bạn cần kiểm tra :
+    <input type="text" id="valInput"
+           onchange="kiemtra(this.value)"
+           oninput="kiemtra(this.value)"
+           placeholder="nhập vào đây">
+    <p id="result"></p>
+</form>
+<script>
+    function isPrime(number) {
+        number = parseFloat(number);
+        if(number==1||number==4){return false}
+        for (let i = 2; i < Math.sqrt(number); i++) {
+          if (number % i == 0) {
+              return false;
+          }
+        }
+        return true;
+    }
+
+    function kiemtra(number) {
+        let kq = isPrime(number);
+        if (kq) {
+            document.getElementById("result").innerHTML = number + " là số nguyên tố";
+        } else {
+            document.getElementById("result").innerHTML = number + " không phải là số nguyên tố"
+        }
+    }
+</script>
+</body>
+</html>
