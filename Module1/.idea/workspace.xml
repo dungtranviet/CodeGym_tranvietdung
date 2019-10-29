@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/Demo/backup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/funnyCircles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -21,19 +23,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html">
+        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/funnyCircles/funnyCircles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/XayDungLopDate/XayDungLopDate.html">
+        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="835">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="184">
+              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo/myjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo/backup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -44,8 +67,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,10 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Mang/LuyenTapMang01/bai5.html" />
-        <option value="$PROJECT_DIR$/Mang/LuyenTapMang01/bai6.html" />
-        <option value="$PROJECT_DIR$/Mang/LuyenTapMang01/bai7.html" />
-        <option value="$PROJECT_DIR$/Mang/LuyenTapMang01/bai8.html" />
         <option value="$PROJECT_DIR$/Mang/LuyenTapMang01/bai9.html" />
         <option value="$PROJECT_DIR$/Mang/LuyenTapMang02/bai1.html" />
         <option value="$PROJECT_DIR$/Mang/LuyenTapMang02/bai2.html" />
@@ -106,6 +125,10 @@
         <option value="$PROJECT_DIR$/HuongDoiTuong/Demo/myjs.js" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/XayDungLopDate/XayDungLopDate.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.html" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/funnyCircles.html" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/Demo/backup.js" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.js" />
       </list>
     </option>
   </component>
@@ -139,13 +162,13 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="HuongDoiTuong" type="462c0819:PsiDirectoryNode" />
-              <item name="XayDungLopDate" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="HuongDoiTuong" type="462c0819:PsiDirectoryNode" />
-              <item name="XayDungLopHinhTron" type="462c0819:PsiDirectoryNode" />
+              <item name="funnyCircles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,7 +250,8 @@
       <workItem from="1572229727718" duration="24071000" />
       <workItem from="1572267468990" duration="8591000" />
       <workItem from="1572307193424" duration="846000" />
-      <workItem from="1572321984324" duration="9229000" />
+      <workItem from="1572321984324" duration="15970000" />
+      <workItem from="1572352307309" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -240,13 +264,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332605000" />
+    <option name="totallyTimeSpent" value="341609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,37 +313,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ham/minOfArray/baiTap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ham/ChuyenDoiFeetMeters/baiTap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ham/LuyenTapSuDungHam/bai1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ham/LuyenTapSuDungHam/bai2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ham/LuyenTapSuDungHam/bai4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -551,13 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo.html" />
     <entry file="file://$PROJECT_DIR$/Ham/KiemTraDoiXung/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -575,10 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo/myjs.js">
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="251">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -589,10 +576,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html">
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.html" />
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo/backup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Demo/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/funnyCircles/funnyCircles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
