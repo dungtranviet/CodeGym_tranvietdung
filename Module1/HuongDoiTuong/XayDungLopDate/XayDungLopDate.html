@@ -29,7 +29,7 @@
         this.setyear = function (year) {
             this.year = year;
         };
-        this.setDate= function () {
+        this.setDate= function (day,month,year) {
             this.day = day;
             this.month = month;
             this.year = year;
@@ -48,7 +48,7 @@
     date.setMonth(3);
     date.setyear(1999);
     alert(date.toString());
-    date.setDate();
+    date.setDate(21,11,1996);
     alert(date.toString());
 </script>
 </body>
