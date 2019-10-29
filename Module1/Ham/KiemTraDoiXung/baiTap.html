@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập vào từ cần kiểm tra");
+    let result = isPalindrome(str, 0, str.length - 1);
+    alert(result);
+    function isPalindrome(s) {
+        let min = 0;
+        let max = s.length-1;
+        if (s[min] == s[max]) {
+            if (max>0) {
+                s = s.substring(min + 1, max);
+                let isPal=isPalindrome(s);
+                return isPal;
+            } else {
+                return true;
+            }
+
+        } else {
+            return false
+        }
+    }
+</script>
+</body>
+</html>
