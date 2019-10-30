@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#mobile1 {
+    width: 500px;
+    height: 650px;
+    border: 1px solid cornflowerblue;
+    float: left;
+}
+#select1 input {
+    width: 119px;
+    border: 1px solid cornflowerblue;
+}
+#display1 {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid cornflowerblue;
+    overflow:auto;
+}
+
+#mobile2 {
+    width: 500px;
+    height: 650px;
+    border: 1px solid cornflowerblue;
+    float: right;
+}
+
+#select2 input {
+    width: 119px;
+    border: 1px solid cornflowerblue;
+}
+
+#display2 {
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid cornflowerblue;
+    overflow:auto;
+}

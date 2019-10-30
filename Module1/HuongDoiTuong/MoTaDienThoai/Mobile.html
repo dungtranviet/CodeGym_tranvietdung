@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="mobile1">
+    <h3>Nokia</h3>
+    <p id="status1"></p>
+    <div>
+        <label><input type="radio" name="onof" value="true" onchange="Nokia.getOnOff(true)"> ON MOBILE</label> <br>
+        <label><input type="radio" name="onof" value="false" onchange="Nokia.getOnOff(false)">OFF MOBILE</label>
+    </div>
+    <div id="select1">
+        <input type="button" value="tin chưa gửi" onclick="Nokia.getDraft(display1.id)">
+        <input type="button" value="tin đã gửi" onclick="Nokia.getOutbox(display1.id)">
+        <input type="button" value="tin đã nhận" onclick="Nokia.getInbox(display1.id)">
+        <input type="button" value="soạn tin nhắn" onclick="sendMessage1()"></div>
+    <div id="display1"><p>vung hien thi</p></div>
+</div>
+
+<div id="mobile2">
+    <h3>Iphone</h3>
+    <p id="status2"></p>
+    <div>
+        <label><input type="radio" name="onof" value="true" onchange="Iphone.getOnOff(true)"> ON MOBILE</label> <br>
+        <label><input type="radio" name="onof" value="false" onchange="Iphone.getOnOff(false)">OFF MOBILE</label>
+    </div>
+    <div id="select2">
+        <input type="button" value="tin chưa gửi" onclick="Iphone.getDraft(display2.id)">
+        <input type="button" value="tin đã gửi" onclick="Iphone.getOutbox(display2.id)">
+        <input type="button" value="tin đã nhận" onclick="Iphone.getInbox(display2.id)">
+        <input type="button" value="soạn tin nhắn" onclick="sendMessage2()"></div>
+    <div id="display2"><p>vung hien thi</p></div>
+</div>
+
+
+<script>
+    let Mobile = function (Battery) {
+        this.Battery = Battery;
+        this.onOff = true;
+        this.getOnOff = function (onOff) {
+            this.onOff = onOff;
+            this.displayStatus();
+        }
+        this.status = function () {
+            if (this.Battery > 0 && this.Battery <= 100) {
+                if (this.onOff) {
+                    return true;
+                } else return false;
+            } else return false;
+        }
+        this.Draft = [];
+        this.saveDraft = function (message) {
+            this.Draft.push(message);
+        }
+        this.getDraft = function (Display) {
+            let str = "";
+            for (let i = 0; i < this.Draft.length; i++) {
+                str += this.Draft[i] + "<br><hr>"
+            }
+            document.getElementById(Display).innerHTML = str;
+        }
+        this.Inbox = [];
+        this.saveInbox = function (message) {
+            this.Inbox.push(message);
+        }
+        this.getInbox = function (Display) {
+            let str = "";
+            for (let i = 0; i < this.Inbox.length; i++) {
+                str += this.Inbox[i] + "<br><hr>"
+            }
+            document.getElementById(Display).innerHTML = str;
+        }
+        this.Outbox = [];
+        this.saveOutbox = function (message) {
+
+            this.Outbox.push(message);
+        }
+        this.getOutbox = function (Display) {
+            let str = "";
+            for (let i = 0; i < this.Outbox.length; i++) {
+                str += this.Outbox[i] + "<br><hr>"
+            }
+            document.getElementById(Display).innerHTML = str;
+        }
+        this.sendMessage = function (mobile, message) {
+            if (this.status()) {
+                if (mobile.status()) {
+                    mobile.saveInbox(message);
+                    this.saveOutbox(message);
+                } else this.saveDraft(message);
+            }
+        }
+        this.setIdStatus = function (id) {
+            this.idStatus = id;
+        }
+        this.displayStatus = function () {
+            {
+                document.getElementById(this.idStatus).innerHTML = "Status : " + this.status();
+            }
+        }
+    }
+
+    function sendMessage1() {
+        let str = "<div style='width: 400px;height: 400px;margin: auto;margin-top: 20px;'>" +
+            "<textarea id='content1' name='message' rows='25' cols='54'></textarea></div>" +
+            "<div style='margin-left: 200px;'><input type='button' value='Send' onclick='Nokia.sendMessage(Iphone,content1.value)'></div>";
+        document.getElementById("display1").innerHTML = str;
+    }
+
+    function sendMessage2() {
+
+        let str = "<div style='width: 400px;height: 400px;margin: auto;margin-top: 20px;'>" +
+            "<textarea id='content2' name='message' rows='25' cols='54'></textarea></div>" +
+            "<div style='margin-left: 200px;'><input type='button' value='Send' onclick='Iphone.sendMessage(Nokia,content2.value)'></div>";
+        document.getElementById("display2").innerHTML = str;
+    }
+
+    let Nokia = new Mobile(50);
+    Nokia.setIdStatus("status1");
+    Nokia.displayStatus();
+    let Iphone = new Mobile(50);
+    Iphone.setIdStatus("status2");
+    Iphone.displayStatus();
+
+</script>
+</body>
+</html>
