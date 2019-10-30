@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Customer = new Array();
+    Selector();
+
+    function Selector() {
+        let select = parseInt(prompt("1.Add new customer" + "\n" + "2.Display information customer" + "\n"
+            + "3.Edit information customer" + "\n" + "4.Delete customer" + "\n" + "5.Exit"));
+        switch (select) {
+            case 1:
+                addCustomer();
+                break;
+            case 2:
+                displayCustomer();
+                break;
+            case 3:
+                editCustomer();
+                break;
+            case 4:
+                deleteCustomer();
+                break;
+            case 5:
+                break;
+            default: {
+                alert("Invalid");
+                Selector();
+            }
+        }
+    }
+
+    function addCustomer() {
+        let person = new Array(11);
+        person[0] = prompt("Enter Name Customer");
+        person[1] = prompt("Enter Id Card Customer");
+        person[2] = prompt("Enter Birthday Customer");
+        person[3] = prompt("Enter Email Customer");
+        person[4] = prompt("Enter Address Customer");
+        person[5] = prompt("Enter Type Customer");
+        person[6] = prompt("Enter Discount");
+        person[7] = prompt("Enter Number Of Acccompannying:");
+        person[8] = prompt("Enter Type Room");
+        person[9] = prompt("Enter Rent Day");
+        person[10] = prompt("Enter Type Sevice");
+        Customer.push(person);
+        Selector();
+    }
+
+    function showProm() {
+        let str = "";
+        for (let i = 0; i < Customer.length; i++) {
+            str += (i + 1) + ". Name : " + Customer[i][0] + " ;Id card : " + Customer[i][1] + "\n";
+        }
+        str += (Customer.length + 1) + ". Back";
+        let select = parseInt(prompt(str));
+        select--;
+        if (select == Customer.length) {
+            return Selector();
+        }
+        let Valid = (select >= 0) && (select < Customer.length);
+        if (Valid) {
+            return select;
+        } else {
+            return -1;
+        }
+    }
+
+    //HIỂN THỊ THÔNG TIN KHÁCH HÀNG
+    function displayCustomer() {
+        if (Customer.length == 0) {
+            alert("List is not found!!please more add Customer");
+            return Selector();
+        }
+        let select = showProm();
+        if (select == -1) {
+            alert("Invalid!!")
+            return editCustomer();
+        } else {
+            displayInformation(select);
+        }
+    }
+
+    function displayInformation(Index) {
+        let str = getInfor(Index);
+        alert(str);
+        Selector();
+    }
+
+    function getInfor(Index) {
+        let str = "";
+        str += "Information Of Customer" + "\n"
+            + "1.Name Customer:" + " " + Customer[Index][0] + "\n"
+            + "2.Id Card Customer:" + " " + Customer[Index][1] + "\n"
+            + "3.Birthday Customer:" + " " + Customer[Index][2] + "\n"
+            + "4.Email Customer:" + " " + Customer[Index][3] + "\n"
+            + "5.Address Customer:" + " " + Customer[Index][4] + "\n"
+            + "6.Type Customer:" + " " + Customer[Index][5] + "\n"
+            + "7.Discount:" + " " + Customer[Index][6] + "\n"
+            + "8.Number Of Accompanying:" + " " + Customer[Index][7] + "\n"
+            + "9.Type Room:" + " " + Customer[Index][8] + "\n"
+            + "10.Rent Day:" + " " + Customer[Index][9] + "\n"
+            + "11.Type Sevice:" + " " + Customer[Index][10] + "\n";
+        return str;
+    }
+
+    //SỬA THÔNG TIN KHÁCH HÀNG
+    function editCustomer() {
+        if (Customer.length == 0) {
+            alert("List is not found!!please more add Customer");
+            return Selector();
+        }
+        let select = showProm();
+        if (select == -1) {
+            alert("Invalid!!");
+            return editCustomer();
+        } else {
+            editInformation(select);
+        }
+    }
+
+    function editInformation(Index) {
+        let str = getInfor(Index);
+        str += "12.Back";
+        let select = prompt(str);
+        if (select == 12) {
+            editCustomer();
+        } else {
+            if ((select >= 0) && (select < 11)) {
+                select--;
+                Customer[Index][select] = prompt("Enter infor you waant change");
+                alert("Changed");
+                Selector();
+            } else {
+                alert("Invalid!!");
+                editInformation(Index);
+            }
+        }
+    }
+
+    //XÓA THÔNG TIN KHÁCH HÀNG
+    function deleteCustomer() {
+        if (Customer.length == 0) {
+            alert("List is not found!!please more add Customer");
+            Selector();
+        } else {
+            let select = showProm();
+            if (select == -1) {
+                alert("Invalid!!");
+                deleteCustomer();
+            } else {
+                if (select == Customer.length) {
+                    Selector();
+                } else {
+                    let sure = confirm("are you sure delete customer : Name: " + Customer[select][0] + " Id card: " + Customer[select][1]);
+                    if (sure) {
+                        for (let i = select; i < Customer.length; i++) {
+                            Customer[i] = Customer[i + 1];
+                        }
+                        Customer.length--;
+                    }
+                    Selector();
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
