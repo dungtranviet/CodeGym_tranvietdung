@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/AdamEva/AdamEva.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HuongDoiTuong/CongTacVaBongDen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HuongDoiTuong/CongTacVaBongDen/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +21,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/CongTacVaBongDen/index.html">
+        <entry file="file://$PROJECT_DIR$/HuongDoiTuong/AdamEva/AdamEva.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -49,8 +46,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Mang/LuyenTapMang02/bai5.html" />
-        <option value="$PROJECT_DIR$/CaseStudy/#4Mang/YeuCau4.html" />
         <option value="$PROJECT_DIR$/Demo.html" />
         <option value="$PROJECT_DIR$/Mang/TicTacToe/myJs.js" />
         <option value="$PROJECT_DIR$/Demo/index.html" />
@@ -100,6 +95,8 @@
         <option value="$PROJECT_DIR$/HuongDoiTuong/Demo/demo.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/MoTaDenPin/index.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/CongTacVaBongDen/index.html" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/AdamEva.html" />
+        <option value="$PROJECT_DIR$/HuongDoiTuong/AdamEva/AdamEva.html" />
       </list>
     </option>
   </component>
@@ -137,7 +134,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="HuongDoiTuong" type="462c0819:PsiDirectoryNode" />
-              <item name="CongTacVaBongDen" type="462c0819:PsiDirectoryNode" />
+              <item name="AdamEva" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,7 +223,7 @@
       <workItem from="1572430194560" duration="481000" />
       <workItem from="1572438637045" duration="4237000" />
       <workItem from="1572443184185" duration="1664000" />
-      <workItem from="1572484134840" duration="14346000" />
+      <workItem from="1572484134840" duration="20460000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -239,7 +236,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396969000" />
+    <option name="totallyTimeSpent" value="403083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -288,10 +285,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ham/QuanLySanPham/style.css" />
-    <entry file="file://$PROJECT_DIR$/Mang/LuyenTapMang01/bai1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mang/LuyenTapMang01/bai2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -564,12 +557,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HuongDoiTuong/CongTacVaBongDen/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/AdamEva.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/AdamEva/AdamEva.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
         </state>
       </provider>
     </entry>
