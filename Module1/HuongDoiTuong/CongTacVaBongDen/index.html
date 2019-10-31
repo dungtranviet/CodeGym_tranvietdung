@@ -5,50 +5,44 @@
     <title>Title</title>
 </head>
 <body>
-<div style="border:0px ;margin: auto;width:250px"><img src="lampOn.png" id="lamp"></div>
-<div style="border:0px ;margin: auto;width:80px"><img src="switchOff.png" onclick="lampOnOff()"></div>
+<div style="border:0px ;margin: auto;width:250px"><img src="lampOff.png" id="lamp"></div>
+<div style="border:0px ;margin: auto;width:80px"><img src="switchOn.png" onclick="lampOnOff()" id="switch"></div>
 
 <script>
-    let Battery = function () {
-        let setEnergy = function (energy) {
-            this.energy = energy;
-        }
-        let getEnergy = function () {
-            return this.energy;
-        }
-        let decreaseEnergy = function () {
-            this.energy--;
-        }
-    }
-    let FlashLamp = function () {
-        this.setBattery = function (battery) {
-            this.battery = battery;
-        }
+    let Lamp = function (status) {
+        this.status = status; //KIỂM TRA TÌNH TRẠNG BÓNG ĐÈN CÒN CÓ THỂ HOẠT ĐỘNG TỐT HAY KHÔNG?!!
+        this.setStatus = function (status) {
+            this.status = status;
+        };
         this.turnOn = function () {
-            this.status = true;
-        }
+            if(this.status){
+                document.getElementById("lamp").src="lampOn.png";
+                document.getElementById("switch").src="switchOff.png";
+            }
+        };
         this.turnOff = function () {
-            this.status = false;
-        }
-        this.light = function () {
-            if (this.status) {
-                alert("lighting");
-            } else {
-                alert("not lighting");
+                document.getElementById("lamp").src="lampOff.png";
+                document.getElementById("switch").src="switchOn.png";
+        };
+    };
+    let Switch = function (lamp,status) {
+        this.status = status;
+        this.turnOnOff=function () {
+            this.status=!this.status;
+            if(this.status){
+                lamp.turnOn();
+            }
+            else {
+                lamp.turnOff();
             }
         }
-        this.getBatteryInfor = function () {
-            return this.battery.getEnergy();
-        }
     }
-    let battery = new Battery();
-    let flashLamp = new flashLamp();
-    flashLamp.setBattery(50);
-    
+
+    let lamp=new Lamp(true);
+    let switchOnOff=new Switch(lamp,false);
     function lampOnOff() {
-
+        switchOnOff.turnOnOff();
     }
-
 </script>
 </body>
 </html>
