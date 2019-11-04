@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let Tivi = function (chanel, volume, status) {
+    let TiviClass = function (chanel, volume, status) {
         this.chanel = chanel;
         this.setChanel = function (chanel) {
             this.chanel = chanel;
@@ -54,15 +54,15 @@
             tivi.setVolume(tivi.getVolume()-value);
         };
     };
-    let tivi=new Tivi(7,5,false);
-    document.write("The fisrt.Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
-    let remote=new Remote(tivi);
+    let Tivi=new TiviClass(7,5,false);
+    document.write("The fisrt.Tivi is "+Tivi.getStatus()+" ,Volume: "+Tivi.getVolume()+" ,chanel: "+Tivi.getChanel()+"<br>");
+    let remote=new Remote(Tivi);
     remote.turnOn();
-    document.write("Remote turn on tivi.Now,Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    document.write("Remote turn on tivi.Now,Tivi is "+Tivi.getStatus()+" ,Volume: "+Tivi.getVolume()+" ,chanel: "+Tivi.getChanel()+"<br>");
     remote.chanelControll(3);
-    document.write("Changed chanel.Now Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    document.write("Changed chanel.Now Tivi is "+Tivi.getStatus()+" ,Volume: "+Tivi.getVolume()+" ,chanel: "+Tivi.getChanel()+"<br>");
     remote.increaseVolum(2);
-    document.write("Volume increased by 2.Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    document.write("Volume increased by 2.Tivi is "+Tivi.getStatus()+" ,Volume: "+Tivi.getVolume()+" ,chanel: "+Tivi.getChanel()+"<br>");
 </script>
 </body>
 </html>
