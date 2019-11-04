@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CaseStudy/#2CauTrucDieuKien/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Process.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/YeuCau6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/vnhvjv.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Demo/myJs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/picture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Process.js" beforeDir="false" afterPath="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Process.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,19 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Process.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+            <state relative-caret-position="2485">
+              <caret line="162" column="11" lean-forward="true" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Customer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="510">
               <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
             </state>
           </provider>
@@ -270,7 +261,7 @@
       <workItem from="1572600869897" duration="3276000" />
       <workItem from="1572605947214" duration="6553000" />
       <workItem from="1572615663060" duration="4061000" />
-      <workItem from="1572768265350" duration="2880000" />
+      <workItem from="1572768265350" duration="4678000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -283,7 +274,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448078000" />
+    <option name="totallyTimeSpent" value="449876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -611,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Customer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/YeuCau6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -627,8 +611,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Process.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
+        <state relative-caret-position="2485">
+          <caret line="162" column="11" lean-forward="true" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong/Customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
         </state>
       </provider>
     </entry>

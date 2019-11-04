@@ -158,10 +158,7 @@ function editInfo() {
 function deleteCustomer(index) {
     let agree = confirm("Are you sure??");
     if (agree) {
-        for (let i = index; i < listCustomer.length; i++) {
-            listCustomer[i] = listCustomer[i + 1];
-        }
-        listCustomer.length--;
+        listCustomer.splice(listCustomer[index]-1,1);
     }
     Menu();
 }
