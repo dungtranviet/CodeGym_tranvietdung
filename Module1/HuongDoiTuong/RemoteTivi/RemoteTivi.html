@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Tivi = function (chanel, volume, status) {
+        this.chanel = chanel;
+        this.setChanel = function (chanel) {
+            this.chanel = chanel;
+        };
+        this.getChanel=function () {
+            return this.chanel;
+        };
+        this.volume = volume;
+        this.setVolume = function (volume) {
+            let valid=0<=volume&&volume<=10;
+            if(valid){
+                this.volume = volume;
+            }
+        };
+        this.getVolume=function () {
+            return this.volume;
+        };
+        this.status = status;
+        this.setStatus = function (status) {
+            this.status = status;
+        };
+        this.getStatus=function () {
+            if(this.status){
+                return "On";
+            }
+            else {
+                return "Off";
+            }
+        }
+    };
+    let Remote=function (tivi) {
+        this.turnOn=function () {
+            tivi.setStatus(true);
+        };
+        this.turnOff=function () {
+            tivi.setStatus(false);
+        };
+        this.chanelControll=function (chanel) {
+            tivi.setChanel(chanel);
+        };
+        this.increaseVolum=function (value) {
+           tivi.setVolume(tivi.getVolume()+value);
+        };
+        this.decreaseVolum=function (value) {
+            tivi.setVolume(tivi.getVolume()-value);
+        };
+    };
+    let tivi=new Tivi(7,5,false);
+    document.write("The fisrt.Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    let remote=new Remote(tivi);
+    remote.turnOn();
+    document.write("Remote turn on tivi.Now,Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    remote.chanelControll(3);
+    document.write("Changed chanel.Now Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+    remote.increaseVolum(2);
+    document.write("Volume increased by 2.Tivi is "+tivi.getStatus()+" ,Volume: "+tivi.getVolume()+" ,chanel: "+tivi.getChanel()+"<br>");
+</script>
+</body>
+</html>
