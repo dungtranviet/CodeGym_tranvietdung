@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Rat = function (name, weigh, speed, status) {
+        this.name = name;
+        this.weigh = weigh;
+        this.speed = speed;
+        this.status = status;
+        this.greeting=function () {
+            this.action("Rat :Hola!!I'm "+this.name + " ,my weigh : "+ this.weigh+" and my speed :"+this.speed+"<br>");
+        };
+        this.action = function (says) {
+            document.write(says);
+        };
+        this.getStatus = function () {
+            return this.status;
+        };
+        this.setStatus = function (status) {
+            this.status = status;
+        };
+        this.setWeigh=function (weigh) {
+            this.weigh=weigh;
+        };
+    };
+    let Cat = function (name, weigh, speed, status) {
+        this.name = name;
+        this.weigh = weigh;
+        this.speed = speed;
+        this.status = status;
+        this.greeting=function () {
+            this.action("Cat :Hola!!I'm "+this.name + " ,my weigh : "+ this.weigh+" and my speed :"+this.speed+"<br>");
+        };
+        this.action = function (says) {
+            document.write(says);
+        };
+        this.increseWeigh=function (weigh) {
+            this.weigh+=weigh;
+        };
+        this.eat = function (rat) {
+            let  valid = rat.getStatus();
+            if(!valid){
+                this.action("Cat : Opps!! rat died,can't eat \n")
+            }
+            else {
+                valid = this.speed > rat.speed;
+                if(!valid){
+                    rat.action("Rat : haha!!My speed is faster than cat \n")
+                }
+                if (valid) {
+                    rat.setStatus(false);
+                    this.increseWeigh(rat.weigh);
+                    rat.setWeigh();
+                    this.action("Rat :I ate cat.Now,my weigh is :"+this.weigh);
+                }
+            }
+        }
+    };
+    let rat=new Rat("Jerry",2,15,true);
+    rat.greeting();
+    let cat=new Cat("Tom",12,20,true);
+    cat.greeting();
+    cat.eat(rat);
+</script>
+</body>
+</html>
