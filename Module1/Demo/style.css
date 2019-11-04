@@ -1,61 +1,11 @@
-*{
-    padding: 0px;
-    margin: 0px;
+#game-board{
+    position: relative;
+    margin-top: 50px;
 }
-body{
-    width: 800px;
-    margin: auto;
-}
-#top{
-    height: 100px;
-    background: chocolate;
+.cell{
+    border: solid 1px blue;
     text-align: center;
-    line-height: 100px;
-}
-#menu{
-    height: 30px;
-    background: blueviolet;
-}
-#menu ul li{
-    list-style: none;
-    float: left;
-    width: 160px;
-    text-align: center;
-    line-height: 30px;
-}
-#menu ul li a{
-    text-decoration: none;
-    color: #f7ffd8;
-}
-
-#left{
-    float: left;
-    width: 608px;
-    border: 1px solid black;
-}
-.news{
-    border-bottom: 1px solid blanchedalmond;
-    margin: 5px 10px 5px 10px;
-    padding-bottom: 5px;
-}
-.news h3{
-
-    margin-bottom: 2px;
-}
-.news img{
-    border-:1px solid black;
-    padding: 2px;
-    float :left;
-    margin-right: 2px;
-}
-#right{
-    float: left;
-    width: 188px;
-    border:1px black solid ;
-}
-#bottom{
-    text-align: center;
-    line-height: 30px ;
-    height: 30px;
-    background: aqua;
+    font-size:20pt;
+    cursor: pointer;
+    color: red;
 }
