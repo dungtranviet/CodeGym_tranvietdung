@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFisrtLetterUppercase(str) {
+        let regexp=/^[A-Z]/;
+        if(regexp.test(str)){
+            alert(str +" :the first string's character is uppercase");
+        }
+        else {
+            alert(str +" :the first's character is not uppercase");
+        }
+    }
+    let string1= "Nguyen van Nam";
+    let string2= "NGUYEN VAN NAM";
+    let string3= "nguyen van Nam";
+    isFisrtLetterUppercase(string1);
+    isFisrtLetterUppercase(string2);
+    isFisrtLetterUppercase(string3);
+</script>
+</body>
+</html>
