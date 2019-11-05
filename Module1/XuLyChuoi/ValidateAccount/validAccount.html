@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidAccount(str) {
+        let express=/^[_a-z0-9]{6,}$/;
+        if(express.test(str)){
+            document.write(str +" is validate account<br>");
+        }
+        else {
+            document.write(str+" is invalid <br>");
+        }
+    }
+    let str="123abc_";
+    isValidAccount(str);
+    str="_abc123";
+    isValidAccount(str);
+    str="______";
+    isValidAccount(str);
+    str="123456";
+    isValidAccount(str);
+    str="abcdefg";
+    isValidAccount(str);
+    str=".@";
+    isValidAccount(str);
+    str="12345";
+    isValidAccount(str);
+    str="1234_";
+    isValidAccount(str);
+    str="abcde ";
+    isValidAccount(str);
+</script>
+</body>
+</html>
