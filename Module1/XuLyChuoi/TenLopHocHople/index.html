@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidClass(str) {
+        let regpress=/^[C,A,P][0-9]{4}[G,H,I,K,L,M]$/;
+        if(regpress.test(str)){
+            document.write(str+" là tên lớp học hợp lệ<br>");
+        }
+        else {
+            document.write(str+" không phải là tên lớp học hợp lệ <br>");
+        }
+    }
+    let str="C0318G";
+    isValidClass(str);
+    str="M0318G";
+    isValidClass(str);
+    str="P0323A";
+    isValidClass(str);
+</script>
+</body>
+</html>
