@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidPhoneNumber(str) {
+        let regexpress=/^[(][0-9]{2}[)][-][(][0][0-9]{9}[)]$/;
+        if(regexpress.test(str)){
+            document.write(str +" is valid phone number <br>");
+        }
+        else {
+            document.write(str +" is invalid <br>");
+        }
+    }
+    let number="(84)-(0978489648)";
+    isValidPhoneNumber(number);
+    number="(a8)-(22222222)";
+    isValidPhoneNumber(number);
+</script>
+</body>
+</html>

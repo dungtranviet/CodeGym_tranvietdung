@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XuLyChuoi/TenLopHocHople/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XuLyChuoi/ValidPhoneNumber/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XuLyChuoi/TenLopHocHople/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="119">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XuLyChuoi/ValidPhoneNumber/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -46,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Ham/QuanLySanPham/demo.html" />
         <option value="$PROJECT_DIR$/Ham/QuanLySanPham/myJs.js" />
         <option value="$PROJECT_DIR$/Ham/KiemTraDoiXung/baiTap.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/Demo.html" />
@@ -97,6 +104,7 @@
         <option value="$PROJECT_DIR$/XuLyChuoi/validEmail/index.html" />
         <option value="$PROJECT_DIR$/XuLyChuoi/ValidateAccount/validAccount.html" />
         <option value="$PROJECT_DIR$/XuLyChuoi/TenLopHocHople/index.html" />
+        <option value="$PROJECT_DIR$/XuLyChuoi/ValidPhoneNumber/index.html" />
       </list>
     </option>
   </component>
@@ -130,7 +138,7 @@
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
-              <item name="TenLopHocHople" type="462c0819:PsiDirectoryNode" />
+              <item name="ValidPhoneNumber" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,7 +243,7 @@
       <workItem from="1572615663060" duration="4061000" />
       <workItem from="1572768265350" duration="28654000" />
       <workItem from="1572870856716" duration="9383000" />
-      <workItem from="1572915904433" duration="9204000" />
+      <workItem from="1572915904433" duration="9974000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -248,7 +256,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492439000" />
+    <option name="totallyTimeSpent" value="493209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -281,16 +289,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="thay doi choi vay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HuongDoiTuong/LopHinhChuNhat/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HuongDoiTuong/XayDungLopDate/XayDungLopDate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -591,8 +589,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XuLyChuoi/TenLopHocHople/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/ValidPhoneNumber/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
