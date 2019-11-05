@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidEmail(str) {
+        let express=/^[a-zA-Z0-9]+(@[a-zA-Z0-9]+)(\.[a-zA-Z0-9]+)$/;
+        if(express.test(str)){
+            document.write(str+" is valid email<br>");
+        }
+        else {
+            document.write(str +" is invalid email<br>");
+        }
+    }
+    let str="a@gmail.com";
+    isValidEmail(str);
+    str="ab@yahoo.com";
+    isValidEmail(str);
+    str="abc@hotmail.com";
+    isValidEmail(str);
+    str="@gmail.com";
+    isValidEmail(str);
+    str="ab@gmail.";
+    isValidEmail(str);
+    str="@#abc@gmail.com";
+    isValidEmail(str);
+
+</script>
+</body>
+</html>
