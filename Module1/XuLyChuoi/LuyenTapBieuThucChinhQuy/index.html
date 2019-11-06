@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidDate(date) {
+        let expressDate = /^([0][1-9]||[1-2]\d||[3][0-1])\/([0][1-9]||[1][0-2])\/\d{4}$/;
+        if (expressDate.test(date)) {
+            document.write(date + " là ngày hợp lệ <br>");
+        } else {
+            document.write(date + " không phải là ngày hợp lệ <br>");
+        }
+    }
+
+    function lenghtOfString(str) {
+        let Character = /\w+\b/g;
+        let counter = str.match(Character);
+        document.write("số lượng từ của chuỗi : '" + str + "' là: " + counter.length + "<br>");
+    }
+
+    function isVowelsConsonants(str) {
+        let expVowels = /[aiueo]/gi;
+        let expConsonants = /[^aiueo\d\W]/gi;
+        let Vowels=str.match(expVowels);
+        let Consonants=str.match(expConsonants);
+        document.write("số lượng nguyên âm trong chuỗi '"+str+"' là :"+Vowels.length+"<br>");
+        document.write("số lượng phụ âm trong chuỗi '"+str+"' là :"+Consonants.length+"<br>");
+    }
+    function isValidPassword(password) {
+        let expPass=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,30}$/;
+        if(expPass.test(password)){
+            document.write(password +" là mật khẩu hợp lệ <br>");
+        }
+        else {
+            document.write(password +" không phải là mật khẩu hợp lệ <br>");
+        }
+    }
+    isValidDate("32/12/1995");
+    isValidDate("05/13/1995");
+    isValidDate("28/12/1991");
+    lenghtOfString("số lượng từ của câu này");
+    isVowelsConsonants("aiueohgnbjai251");
+    isValidPassword("1234A56789");
+    isValidPassword("Ad123456SsDDD");
+</script>
+</body>
+</html>
