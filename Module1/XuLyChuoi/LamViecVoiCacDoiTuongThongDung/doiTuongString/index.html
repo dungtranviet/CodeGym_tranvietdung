@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str="Tôi yêu ngôn ngữ lập trình Javascript";
+    let aChar=str.match(/a/gi);
+    document.write("số lần xuất hiện chữ a trong chuỗi '"+str+"' là "+aChar.length+"<br>")
+    let exp= /\p{L}+/gu;
+    let arrChar=str.match(exp);
+    document.write("những chữ trong chuỗi '"+str+"' là:"+arrChar+"<br>");
+</script>
+</body>
+</html>
