@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="numberRandom"></div>
+<div id="display" style="color: red"></div>
+<div>
+    <div><input type="text" id="textbox" ></div>
+    <div><input type="button" value="đoán" onclick="duDoan()"></div>
+</div>
+
+<script>
+    let numberRandom=Math.floor(Math.random()*101);
+    let GameOver=false;
+    let arrValid=[];
+    for(let i=1;i<=100;i++)
+    {arrValid.push(i);
+    }
+    document.getElementById("display").innerHTML+="số secret là :"+numberRandom+"<br>";
+    document.getElementById("display").innerHTML+="Mời bạn nhập trong khoảng "+arrValid[0]+" đến "+arrValid[99]+"<br>";
+    let indexNumberSecret=arrValid.indexOf(numberRandom);
+    function duDoan() {
+        document.getElementById("display").innerHTML+=arrValid+" <br>";
+        while (!GameOver) {
+            let number=document.getElementById("textbox").value;
+            number=parseInt(number);
+            let index=arrValid.indexOf(number);
+            if(index==-1){
+                document.getElementById("display").innerHTML+="số bạn nhập không hợp lệ <br>";
+                break;
+            }
+            if(number==numberRandom){
+                gameOver=true;
+                document.getElementById("display").innerHTML+="bạn đã nhập đúng";
+            }
+            else {
+                if(index<indexNumberSecret){
+                    //arrValid=arrValid.slice(index,arrValid.length);
+                }
+                else {
+                    //arrValid=arrValid.slice(0,index);
+                }
+
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
