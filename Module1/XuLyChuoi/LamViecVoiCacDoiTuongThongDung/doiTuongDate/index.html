@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let today = new Date();
+    let Birthday = new Date("1991/12/28");
+    let ageByYear=today.getFullYear()-Birthday.getFullYear();
+    let ageByMonth=ageByYear*12;
+    let ageByDay=ageByMonth*30;
+    let ageByHour=ageByDay*24;
+    let ageByMinute=ageByHour*60;
+    let ageBySeconds=ageByMinute*60;
+    document.write("tôi đã sống "+ageByYear+" Năm<br>");
+    document.write("tôi đã sống "+ageByMonth+" Tháng<br>");
+    document.write("tôi đã sống "+ageByDay+" Ngày<br>");
+    document.write("tôi đã sống "+ageByHour+" Giờ<br>");
+    document.write("tôi đã sống "+ageByMinute+" Phút<br>");
+    document.write("tôi đã sống "+ageBySeconds+" Giây<br>");
+</script>
+</body>
+</html>

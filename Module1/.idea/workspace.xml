@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongDate/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongMath/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -21,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/index.html">
+        <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongDate/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="340">
+              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -46,8 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HuongDoiTuong/XayDungLopHinhTron/baiTap.html" />
-        <option value="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/myJs.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/funnyCircles/funnyCircles.html" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/Demo/backup.js" />
         <option value="$PROJECT_DIR$/HuongDoiTuong/LopHinhChuNhat/index.html" />
@@ -97,6 +96,8 @@
         <option value="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/demo.html" />
         <option value="$PROJECT_DIR$/XuLyChuoi/LuyenTapBieuThucChinhQuy/demo.html" />
         <option value="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/index.html" />
+        <option value="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongMath/index.html" />
+        <option value="$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongDate/index.html" />
       </list>
     </option>
   </component>
@@ -137,7 +138,7 @@
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
               <item name="LamViecVoiCacDoiTuongThongDung" type="462c0819:PsiDirectoryNode" />
-              <item name="doiTuongString" type="462c0819:PsiDirectoryNode" />
+              <item name="doiTuongDate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,7 +244,8 @@
       <workItem from="1572768265350" duration="28654000" />
       <workItem from="1572870856716" duration="9383000" />
       <workItem from="1572915904433" duration="13949000" />
-      <workItem from="1573003400911" duration="12447000" />
+      <workItem from="1573003400911" duration="15512000" />
+      <workItem from="1573093328986" duration="2346000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -256,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="509631000" />
+    <option name="totallyTimeSpent" value="515042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -289,8 +291,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="thay doi choi vay" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CaseStudy/#5Ham/myJs.html" />
-    <entry file="file://$PROJECT_DIR$/CaseStudy/#5Ham/myJs.js" />
     <entry file="file://$PROJECT_DIR$/CaseStudy/#3CauTrucLap/YeuCau3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-765" />
@@ -565,27 +565,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LuyenTapBieuThucChinhQuy/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/index.html" />
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/demo.html" />
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LuyenTapBieuThucChinhQuy/demo.html" />
     <entry file="file://$PROJECT_DIR$/XuLyChuoi/KiemTraChuCaiDauVietHoa/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -602,8 +584,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongString/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongMath/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LamViecVoiCacDoiTuongThongDung/doiTuongDate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
