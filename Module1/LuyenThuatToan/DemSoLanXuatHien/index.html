@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let RandomNumber = [];
+    for (let i = 0; i < 100; i++) {
+        RandomNumber[i] = Math.floor(Math.random() * 101);
+    }
+    RandomNumber = RandomNumber.sort(function (a, b) {
+        return a - b
+    });
+
+    function DisplayArr(arr) {
+        for (let i = 0; i < 100; i++) {
+            document.write(arr[i] + " ");
+            if (i % 10 == 9) {
+                document.write("<br>");
+            }
+        }
+    }
+    function counter(arr, num) {
+        let firstBin=arr.indexOf(num);
+        let counter=0;
+        if(firstBin!=-1){
+            for(let i=firstBin;i<arr.length;i++ ){
+                if(arr[i]==num){
+                    counter++;
+                }
+            }
+        }
+        return counter;
+    }
+    DisplayArr(RandomNumber);
+    let number = parseInt(prompt("Nhập vào số bạn muốn đếm"));
+    document.write("có "+counter(RandomNumber,number)+" chữ số "+number);
+</script>
+</body>
+</html>
