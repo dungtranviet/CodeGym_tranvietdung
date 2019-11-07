@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let RandomNumber=[];
+    for(let i=0;i<100;i++){
+        RandomNumber[i]=Math.floor(Math.random()*101);
+    }
+    function DisplayArr(arr) {
+        for(let i=0;i<100;i++){
+            document.write(arr[i]+" ");
+            if(i%10==9){
+                document.write("<br>");
+            }
+        }
+    }
+    function findMin(arr) {
+        let min=arr[0];
+        for(let i=1;i<100;i++){
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+    function findMax(arr) {
+        let max=arr[0];
+        for(let i=1;i<100;i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+    DisplayArr(RandomNumber);
+    let max=findMax(RandomNumber);
+    let min=findMin(RandomNumber);
+    document.write("Số lớn nhất là :"+max+"<br>");
+    document.write("Số nhỏ nhất là :"+min);
+</script>
+</body>
+</html>
