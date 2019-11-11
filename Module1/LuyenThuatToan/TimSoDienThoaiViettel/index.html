@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phoneNumber=["0961456321","0961456321","016628749","0961456321","0168156349","0888222780","086236489","0162358479","0166258749","0162147321","016921451","0888444905"];
+    let regex=/^(?=096|097|098|086|0162|0163|0164|0165|0166|0167|0168|0169)\d{10}$/gi;
+    document.write("<h3>Số điện thoại của mạng viettel là dãy số có 10 chữ số và có các đầu số là " +
+        "096|097|098|086|0162|0163|0164|0165|0166|0167|0168|0169</h3>");
+    let check=false;
+    let i;
+    for (i = 0; i < phoneNumber.length; i++) {
+       // check=regex.test("0961456321");
+       check = phoneNumber[i].match(regex);
+      if(check){
+          document.write(phoneNumber[i]+" là số mạng viettel <br>");
+      }
+      else {
+          document.write(phoneNumber[i]+" không phải là số thuộc mạng viettel <br>");
+      }
+    }
+</script>
+</body>
+</html>
