@@ -31,8 +31,16 @@ let Customer = function () {
         this.Name = prompt("Enter Name Customer");
     };
     this.setIdcard = function () {
-        //Regexpress
-        this.IdCard = prompt("Enter Id Card Customer");
+        let regex=/^\d{10}$/;
+        let valid=false;
+        do {
+            this.IdCard = prompt("Enter Id Card Customer");
+            valid=regex.test(this.IdCard);
+            if(!valid){
+                alert("Invalid");
+            }
+        }
+        while (!valid)
     };
     this.setBirthday = function () {
         let validateBirthday = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
@@ -77,14 +85,41 @@ let Customer = function () {
         while (!checkDiscount)
     };
     this.setNOA = function () {
-        this.NOA = prompt("Enter Number Of Acccompannying:");
+        let regex=/^(\d+)$/gi;
+        let valid=false;
+        do {
+            this.NOA = prompt("Enter Number Of Acccompannying:");
+            valid=regex.test(this.NOA);
+            if(!valid){
+                alert("Invalid");
+            }
+        }
+        while (!valid)
     };
     this.setTypeRoom = function () {
-        this.TypeRoom = prompt("Enter Type Room");
+        let regex=/^(Villa|House|Room)$/gi;
+        let valid=false;
+        do {
+            this.TypeRoom = prompt("Enter Type Room");
+            this.TypeRoom=this.TypeRoom.toLowerCase();
+            valid=regex.test(this.TypeRoom);
+            if(!valid){
+                alert("Invalid");
+            }
+        }
+        while (!valid)
     };
     this.setRentDay = function () {
-        //Regexpress
-        this.RentDay = prompt("Enter Rent Day");
+        let regex=/^\d$/;
+        let valid=false;
+        do {
+            this.RentDay = prompt("Enter Rent Day");
+            valid=regex.test(this.RentDay);
+            if(!valid){
+                alert("Invalid");
+            }
+        }
+        while (!valid)
     };
     this.setTypeSevice = function () {
         this.TypeSevice = prompt("Enter Type Sevice");
@@ -96,12 +131,12 @@ let Customer = function () {
         return this.IdCard;
     };
     this.TotalPays = function () {
-        if (this.TypeRoom == "Villa") {
+        if (this.TypeRoom === "villa") {
             this.Tpay = 500 * this.RentDay * (1 - this.Discount / 100);
-        } else if (this.TypeRoom == "House") {
+        } else if (this.TypeRoom === "house") {
             this.Tpay = 300 * this.RentDay * (1 - this.Discount / 100);
 
-        } else if (this.TypeRoom == "Room") {
+        } else if (this.TypeRoom === "room") {
             this.Tpay = 100 * this.RentDay * (1 - this.Discount / 100);
         } else {
             this.Tpay = "OOPs!!Type Room is Invalid";

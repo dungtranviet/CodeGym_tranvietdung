@@ -39,7 +39,7 @@ function selectAction(action) {
     switch (action) {
         case "display":
             alertString = "Choose Customer you want display \n";
-             valid = selectCustomer();
+            valid = selectCustomer();
             if (valid) {
                 DisplayInfor();
             }
