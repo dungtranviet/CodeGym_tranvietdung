@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="Menu()">
+<script>
+    let arrEmployees = [];
+
+    let Enployee = function () {
+        this.setUsername = function (username) {
+            this.Username = username;
+        };
+        this.getUsername = function () {
+            return this.Username;
+        };
+        this.setName = function (name) {
+            this.Name = name;
+        };
+        this.getName = function () {
+            return this.Name;
+        };
+        this.setPass = function (pass) {
+            this.Password = pass;
+        };
+        this.getPass = function () {
+            return this.Password;
+        };
+        this.setBirthday = function (birthday) {
+            this.Birthday = birthday;
+        };
+        this.getBirthday = function () {
+            return this.Birthday;
+        }
+        this.setIdCard = function (idcard) {
+            this.Idcard = idcard;
+        };
+        this.getIdcard = function () {
+            return this.Idcard;
+        };
+        this.setGender = function (gender) {
+            this.Gender = gender;
+        };
+        this.getGender = function () {
+            return this.Gender;
+        };
+        this.setAddress = function (address) {
+            this.Address = address;
+        };
+        this.getAddress = function () {
+            return this.Address;
+        };
+        this.setPhoneNumber = function (phoneNumber) {
+            this.PhoneNumber = phoneNumber;
+        };
+        this.getPhoneNumber= function () {
+            return this.PhoneNumber;
+        };
+        this.setMail = function (mail) {
+            this.Mail = mail;
+        };
+        this.getMail = function () {
+            return this.Mail;
+        };
+    };
+
+
+    function Menu() {
+        select = parseInt(prompt("1.Login" + "\n" + "2.Register" + "\n"
+            + "3.Exit"));
+        switch (select) {
+            case 1:
+                Login();
+                break;
+            case 2:
+                Register("display");
+                break;
+            case 3:
+                break;
+            default: {
+                alert("Invalid");
+                Menu();
+            }
+        }
+    }
+
+    function Login() {
+        if (arrEmployees.length == 0) {
+            alert("User không tồn tại")
+        } else {
+            let validUser = false;
+            let validPass = false;
+            let valid = false;
+            do {
+                let username = prompt("Nhập vào username");
+                let password = prompt("Nhập vào Password");
+                for (let i = 0; i < arrEmployees.length; i++) {
+                    let Employee = arrEmployees[i];
+                    validUser = username === Employee.getUsername();
+                    validPass = password === Employee.getPass();
+                    valid = validPass && validUser;
+                    if (valid) {
+                        alert("Đăng nhập thành công");
+                        DisplayInfor(i);
+                        break;
+                    }
+                }
+                if (!valid) {
+                    alert("sai user hoặc password");
+                }
+            }
+            while (!valid);
+        }
+        Menu();
+    }
+
+    function DisplayInfor(index) {
+        let Employee = arrEmployees[index];
+        alert("Thông tin user vừa đăng nhập" + "\n"
+            + "Tên đăng nhập:" + " " + Employee.getUsername() + "\n"
+            + "Tên nhân viên:" + " " + Employee.getName() + "\n"
+            + "Ngày sinh:" + " " + Employee.getBirthday() + "\n"
+            + "Số CMND:" + " " + Employee.getIdcard() + "\n"
+            + "Giới Tính:" + " " + Employee.getGender() + "\n"
+            + "Địa chỉ:" + " " + Employee.getAddress() + "\n"
+            + "Số điện thoại" + " " + Employee.getPhoneNumber() + "\n"
+            + "Email:" + " " + Employee.getMail() + "\n"
+        );
+    }
+
+    function Register() {
+        let employee = new Enployee();
+        let username = prompt("Nhập vào username của employee");
+        employee.setUsername(username);
+        let name = prompt("Nhập vào tên của Employee");
+        employee.setName(name);
+        let pass = prompt("Nhập vào mật khẩu");
+        employee.setPass(pass);
+        let birthday = prompt("Nhập vào ngày sinh");
+        employee.setBirthday(birthday);
+        let Idcard = prompt("Nhập vào số Id card");
+        employee.setIdCard(Idcard);
+        let gender = prompt("Nhập vào giới tính");
+        employee.setGender(gender);
+        let address = prompt("nhập vào địa chỉ");
+        employee.setAddress(address);
+        let phoneNumber = prompt("Nhập vào số điện thoại");
+        employee.setPhoneNumber(phoneNumber);
+        let validEmail = /^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/gim;
+        let checkEmail = false;
+        let email;
+        do {
+            email = prompt("Enter Email Customer");
+            checkEmail = validEmail.test(email);
+            if (!checkEmail) {
+                alert("Email is Invalid!!please try again")
+            }
+        }
+        while (!checkEmail);
+        employee.setMail(email);
+        arrEmployees.push(employee);
+        Menu();
+    }
+</script>
+</body>
+</html>

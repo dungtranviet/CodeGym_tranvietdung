@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isNumber(number) {
+        let a = parseInt(number.charAt(0));
+        let b = parseInt(number.charAt(1));
+        let c = parseInt(number.charAt(2));
+        let d = parseInt(number.charAt(3));
+        if ((a + b) === (c - d)) {
+            alert("true");
+        } else {
+            alert("false");
+        }
+    }
+    while (1) {
+        let number = prompt("nhập vào một số có 4 chữ số :");
+        isNumber(number);
+    }
+</script>
+</body>
+</html>

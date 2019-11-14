@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let valid=false;
+    let n;
+    let mang=[];
+    do {
+        let regex=/^\d+$/;
+         n=prompt("Nhập vào n:");
+        valid=regex.test(n);
+        n=parseInt(n);
+        valid&=(n>6);
+        if(!valid){
+            alert("n không hợp lệ,hãy nhập lại");
+        }
+    }
+    while (!valid);
+    for(let i=0;i<n;i++){
+        mang[i]=prompt("nhập vào n["+i+"]:");
+    }
+    let mangSau=mang.sort();
+    document.write("Mảng trước khi sắp xếp :");
+    mang=mang.join(",");
+    document.write(mang+"<br>");
+    document.write("Mảng sau khi sắp xếp :");
+    mangSau=mangSau.join(",");
+    document.write(mangSau);
+</script>
+</body>
+</html>

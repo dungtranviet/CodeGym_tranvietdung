@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function addName(){
+        let Name="";
+        let temp="";
+        while(Name.length==0){
+            Name=prompt("Nhập tên");
+            Name=Name.trim();
+        }
+        while (Name.indexOf(" ")!=-1)
+        {
+            let end =Name.indexOf(" ");
+            let str=Name.substring(0,end);
+            temp+=str[0].toUpperCase();
+            temp+=str.substring(1,end).toLowerCase()+ ' ';
+            Name=Name.substring(end,).trim();
+        }
+        temp+=Name[0].toUpperCase();
+        temp+=Name.substring(1,).toLowerCase();
+        alert("Tên sau khi chuẩn hóa là: "+ temp);
+    }
+    addName();
+</script>
+</body>
+</html>
