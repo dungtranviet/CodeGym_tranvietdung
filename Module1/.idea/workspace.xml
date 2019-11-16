@@ -4,25 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BaiThiCuoiModule1/Cau1/Cau1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThiCuoiModule1/Cau2/Cau2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThiCuoiModule1/Cau3/Cau3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThiCuoiModule1/Cau4/Cau4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HuongDoiTuong/Demo/dem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/DocSoThanhChu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/HienThiLoiChao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/KhaiBaoSuDungBien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/KiemTraSoNguyenTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/PhuongTrinhBacNhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/SuDungToanTu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/SystemTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/ngon_ngu_java/daysInMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HuongDoiTuong/CoCaro/myJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/HuongDoiTuong/CoCaro/myJs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HuongDoiTuong/CoCaro/tictactoe.html" beforeDir="false" afterPath="$PROJECT_DIR$/HuongDoiTuong/CoCaro/tictactoe.html" afterDir="false" />
-    </list>
+    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -64,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau4/Cau4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+            <state relative-caret-position="128">
+              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -142,7 +124,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-71" />
+    <option name="x" value="328" />
+    <option name="y" value="19" />
     <option name="width" value="896" />
     <option name="height" value="728" />
   </component>
@@ -327,6 +310,7 @@
       <workItem from="1573521202972" duration="11070000" />
       <workItem from="1573614611431" duration="644000" />
       <workItem from="1573732190296" duration="13000" />
+      <workItem from="1573877375575" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -339,10 +323,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="564810000" />
+    <option name="totallyTimeSpent" value="564832000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-71" y="0" width="896" height="728" extended-state="0" />
+    <frame x="328" y="19" width="896" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941725" />
@@ -596,8 +580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau4/Cau4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="128">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
         </state>
       </provider>
     </entry>
