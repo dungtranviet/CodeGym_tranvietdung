@@ -18,7 +18,6 @@ public class XoaPhanTuKhoiMang {
         System.out.println("Nhập vào giá trị bạn muốn xóa :");
         number_del = scanner.nextInt();
         int endIndex=arr.length-1;
-
         for (int i = 0; i < arr.length; i++) {
             if (number_del == arr[i]) {
                 index_del = i;
@@ -26,6 +25,7 @@ public class XoaPhanTuKhoiMang {
                     arr[j] = arr[j+1];
                 }
                 arr[endIndex]=0;
+                endIndex--;
                 count++;
                 isExit=true;
             }
