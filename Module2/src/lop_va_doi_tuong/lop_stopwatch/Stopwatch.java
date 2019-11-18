@@ -1,8 +1,8 @@
 package lop_va_doi_tuong.lop_stopwatch;
 
 public class Stopwatch {
-    long startTime;
-    long endTime;
+    private  long startTime;
+    private  long endTime;
     public Stopwatch() {
         this.startTime = System.currentTimeMillis();
     }

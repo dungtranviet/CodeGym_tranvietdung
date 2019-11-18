@@ -1,10 +1,8 @@
 package lop_va_doi_tuong.lop_hinh_chu_nhat;
 
 public class Rectangle {
-    double width, height;
-
+   private double width, height;
     public Rectangle() {
-
     }
     public Rectangle(double width, double height) {
         this.width = width;
