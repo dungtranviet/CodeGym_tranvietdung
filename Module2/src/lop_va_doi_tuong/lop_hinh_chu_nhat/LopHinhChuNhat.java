@@ -2,7 +2,7 @@ package lop_va_doi_tuong.lop_hinh_chu_nhat;
 
 import java.util.Scanner;
 
-public class lop_hinh_chu_nhat {
+public class LopHinhChuNhat {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter width rectangle :");
