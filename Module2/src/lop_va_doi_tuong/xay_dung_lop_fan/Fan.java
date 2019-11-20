@@ -1,4 +1,4 @@
-package xay_dung_lop_fan;
+package lop_va_doi_tuong.xay_dung_lop_fan;
 
 public class Fan {
     int slow=1;
