@@ -4,14 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/lop_va_doi_tuong/lop_hinh_chu_nhat/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/lop_va_doi_tuong/lop_hinh_chu_nhat/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/lop_va_doi_tuong/phuong_trinh_bac_hai/QuadraticEquation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/lop_va_doi_tuong/phuong_trinh_bac_hai/QuadraticEquation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/xay_dung_lop_fan/Fan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/xay_dung_lop_fan/XayDungLopFan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/lop_va_doi_tuong/xay_dung_lop_fan/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/lop_va_doi_tuong/xay_dung_lop_fan/Fan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/lop_va_doi_tuong/xay_dung_lop_fan/XayDungLopFan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/lop_va_doi_tuong/xay_dung_lop_fan/XayDungLopFan.java" afterDir="false" />
-    </list>
+    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -319,6 +312,7 @@
       <workItem from="1573732190296" duration="13000" />
       <workItem from="1573877375575" duration="22000" />
       <workItem from="1574137468542" duration="72000" />
+      <workItem from="1574384379430" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -331,7 +325,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="564904000" />
+    <option name="totallyTimeSpent" value="565497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="328" y="19" width="896" height="728" extended-state="0" />
