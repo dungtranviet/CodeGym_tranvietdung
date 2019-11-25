@@ -1,16 +1,14 @@
-package casestudy.task1.models;
+package casestudy.task2.models;
 
-public class Room extends Service {
-    public Room(){
-        this.setName("Room");
-        this.setMoneyPerDay(100);
-        this.setArea(50);
-        this.setMaxOfNumberPeople(2);
-        this.setRentType("theo ngày");
+public class Villa extends VipService {
+
+    public Villa() {
     }
-    public String freeService(){
-        return "bữa ăn sáng, nước nóng,bồn tắm";
+
+    public Villa(String id) {
+        this.setId(id);
     }
+
     @Override
     public void showInfor() {
         System.out.println("Tên dịch vụ :" + this.getName());
@@ -18,6 +16,8 @@ public class Room extends Service {
         System.out.println("chi phí thuê/ngày :" + this.getMoneyPerDay());
         System.out.println("số lượng người thuê tối đa : " + this.getMaxOfNumberPeople());
         System.out.println("kiểu thuê :" + this.getRentType());
-        System.out.println("dịch vụ miễn phí : " + this.freeService());
+        System.out.println("tiêu chuẩn của phòng: " + this.getStandardOfRoom());
+        System.out.println("tiện ích kèm theo : " + this.getOtherFacilities());
+        System.out.println("số tầng :"+this.getNumberOfFloor());
     }
 }

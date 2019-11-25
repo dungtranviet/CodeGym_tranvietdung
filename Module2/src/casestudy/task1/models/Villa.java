@@ -1,4 +1,4 @@
-package casestudy.models;
+package casestudy.task1.models;
 
 public class Villa extends VipService {
 

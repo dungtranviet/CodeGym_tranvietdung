@@ -1,7 +1,7 @@
-package casestudy.task1.views;
-import casestudy.task1.models.House;
-import casestudy.task1.models.Room;
-import casestudy.task1.models.Villa;
+package casestudy.task2.views;
+import casestudy.task2.models.House;
+import casestudy.task2.models.Room;
+import casestudy.task2.models.Villa;
 
 public class Main {
     public static void main(String[] args) {
