@@ -27,10 +27,10 @@ public class Room extends Service {
     @Override
     public void addNewService(String service){
         super.addNewService(service);
-        Scanner scanner=new Scanner(System.in);
+    Scanner scanner=new Scanner(System.in);
         System.out.println("nhập vào dịch vụ miễn phí đi kèm :");
         this.freeService=scanner.nextLine();
-    }
+}
 
     @Override
     public String toString() {
