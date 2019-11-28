@@ -1,19 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb7448a0-3f66-49b1-9a8c-b09fdb1dd735" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriLonNhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriNhoNhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChiSoMBI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChuyenDoiTienTe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiCacLoaiHinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiNSoNguyenToDauTien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/KiemTraNamNhuan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TimSoNguyenTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TinhLaiSuat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/UocChungLonNhat.java" afterDir="false" />
+    <list default="true" id="4880e3e1-cfc2-4dab-863a-dc1c638d5081" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Module2/src/advanced_object_oriented_design/colorable/ColorInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/advanced_object_oriented_design/colorable/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/advanced_object_oriented_design/resizeable/ResizeInterfaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/advanced_object_oriented_design/resizeable/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/bai_tap_arraylinkedlist/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/bai_tap_arraylinkedlist/MyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/bai_tap_arraylinkedlist/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/lop_linkedlist_don_gian/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/lop_linkedlist_don_gian/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/lop_linkedlist_don_gian/TestMyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/lop_list_don_gian/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/cau_truc_du_lieu/lop_list_don_gian/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/AbstractShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/TestShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/demo/WriteToCvs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/giai_thuat/Bai9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/point_movable/MovablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/point_movable/MovableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/point_movable/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/point_movable/PointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/shape_triangle/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/shape_triangle/ShapeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/shape_triangle/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module2/src/ke_thua/shape_triangle/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CodeGym_tranvietdung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/models/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/models/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/models/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/models/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/models/VipService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task1/views/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/data/House.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/data/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/data/Room.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/data/Villa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/data/demo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/models/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/models/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/models/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/models/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/models/VipService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/out/production/Module2/casestudy/task2/views/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ChuyenDoiNhietDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ChuyenDoiNhietDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/DaoNguocMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/DaoNguocMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/GiaTriNhoNhatCuaMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/GiaTriNhoNhatCuaMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/GopHaiMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/GopHaiMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/PhanTuLonNhatTrongMangHaiChieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/PhanTuLonNhatTrongMangHaiChieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/SoLanXuatHienKiTuTrongChuoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/SoLanXuatHienKiTuTrongChuoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThemPhanTuVaoMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThemPhanTuVaoMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThietKeMenuUngDung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_DemSoLuongSinhVienThiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_DemSoLuongSinhVienThiDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriLonNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriLonNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriNhoNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/ThucHanh_GiaTriNhoNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TimGiaTriTrongMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TimGiaTriTrongMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TinhTongCacSoTrongMotCot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TinhTongCacSoTrongMotCot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TinhTongCuaDuongCheoChinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/TinhTongCuaDuongCheoChinh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/XoaPhanTuKhoiMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/MangVaPhuongThuc/XoaPhanTuKhoiMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/models/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/models/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/models/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/models/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/models/VipService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task1/views/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/data/House.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/data/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/data/Room.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/data/Villa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/data/demo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/models/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/models/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/models/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/models/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/models/VipService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/casestudy/task2/views/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_circle_cylinder/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_circle_cylinder/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_circle_cylinder/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_circle_cylinder/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_hinh_chu_nhat/LopHinhChuNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_hinh_chu_nhat/LopHinhChuNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_hinh_chu_nhat/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_hinh_chu_nhat/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_stopwatch/LopStopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_stopwatch/LopStopwatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_stopwatch/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/lop_stopwatch/Stopwatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/phuong_trinh_bac_hai/PhuongTrinhBacHai.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/phuong_trinh_bac_hai/PhuongTrinhBacHai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/phuong_trinh_bac_hai/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/lop_va_doi_tuong/phuong_trinh_bac_hai/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChiSoMBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChiSoMBI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChuyenDoiTienTe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/ChuyenDoiTienTe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiCacLoaiHinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiCacLoaiHinh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiNSoNguyenToDauTien.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/HienThiNSoNguyenToDauTien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/KiemTraNamNhuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/KiemTraNamNhuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TimSoNguyenTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TimSoNguyenTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TinhLaiSuat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/TinhLaiSuat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/UocChungLonNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/src/ngon_ngu_java/UocChungLonNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/xay_dung_lop_fan/Fan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/src/xay_dung_lop_fan/XayDungLopFan.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +130,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-71" />
-    <option name="width" value="896" />
-    <option name="height" value="728" />
-  </component>
-  <component name="ProjectId" id="1TgMjWBP7FMRukfG3TPdlOqsYLD" />
+  <component name="ProjectId" id="1U9BUp319RfKU8C3RBouDpcFTqo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Module2" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,14 +154,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb7448a0-3f66-49b1-9a8c-b09fdb1dd735" name="Default Changelist" comment="" />
-      <created>1571977990110</created>
+      <changelist id="4880e3e1-cfc2-4dab-863a-dc1c638d5081" name="Default Changelist" comment="" />
+      <created>1574758948852</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571977990110</updated>
-      <workItem from="1571977991429" duration="110000" />
-      <workItem from="1571978206099" duration="6000" />
-      <workItem from="1573877422488" duration="453000" />
+      <updated>1574758948852</updated>
+      <workItem from="1574758952175" duration="34000" />
+      <workItem from="1574759066000" duration="77000" />
     </task>
     <servers />
   </component>
@@ -75,7 +172,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

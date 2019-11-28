@@ -4,7 +4,50 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="" />
+    <list default="true" id="8bcfba3b-e238-4854-bb39-6385855b9d91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/CodeGym_tranvietdung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/models/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/models/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/models/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/models/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/models/VipService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task1/views/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/data/House.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/data/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/data/Room.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/data/Villa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/data/demo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/models/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/models/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/models/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/models/Villa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/models/VipService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/casestudy/task2/views/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/models/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/models/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/models/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/models/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/models/VipService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task1/views/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/data/House.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/data/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/data/Room.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/data/Villa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/data/demo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/models/House.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/models/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/models/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/models/Villa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/models/VipService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/casestudy/task2/views/Main.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,44 +60,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CaseStudy/#5Ham/#5YeuCau5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-384" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau1/Cau1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau2/Cau2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau3/Cau3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau4/Cau4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -130,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="328" />
     <option name="y" value="19" />
     <option name="width" value="896" />
@@ -155,6 +164,17 @@
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="BaiThiCuoiModule1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="BaiThiCuoiModule1" type="462c0819:PsiDirectoryNode" />
+              <item name="Cau3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
               <item name="CaseStudy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -166,13 +186,25 @@
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="Mang" type="462c0819:PsiDirectoryNode" />
+              <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module1" type="462c0819:PsiDirectoryNode" />
-              <item name="Mang" type="462c0819:PsiDirectoryNode" />
-              <item name="LuyenTapMang01" type="462c0819:PsiDirectoryNode" />
+              <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
+              <item name="KiemTraChuCaiDauVietHoa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
+              <item name="LuyenTapBieuThucChinhQuy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module1" type="462c0819:PsiDirectoryNode" />
+              <item name="XuLyChuoi" type="462c0819:PsiDirectoryNode" />
+              <item name="MaQuocGiaMy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,7 +216,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CaseStudy/#6HuongDoiTuong" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -303,6 +335,9 @@
       <workItem from="1574137468542" duration="72000" />
       <workItem from="1574384379430" duration="593000" />
       <workItem from="1574395192763" duration="607000" />
+      <workItem from="1574758576719" duration="36000" />
+      <workItem from="1574841801550" duration="2125000" />
+      <workItem from="1574849686499" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="thay doi choi vay">
       <created>1571059246035</created>
@@ -315,13 +350,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566104000" />
+    <option name="totallyTimeSpent" value="568497000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="328" y="19" width="896" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24941725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -394,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XuLyChuoi/KiemTraChuCaiDauVietHoa/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ham/minOfArray/baiTap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220" />
@@ -425,9 +452,6 @@
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LuyenTapBieuThucChinhQuy/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Mang/LuyenTapMang01/bai9.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -542,6 +566,9 @@
     <entry file="file://$PROJECT_DIR$/HuongDoiTuong/Temperature/Temperature.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/CaseStudy/#5Ham/#5YeuCau5.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau1/Cau1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -556,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau3/Cau3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau4/Cau4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -570,9 +590,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CaseStudy/#5Ham/#5YeuCau5.html">
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/KiemTraChuCaiDauVietHoa/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384" />
+        <state relative-caret-position="144">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XuLyChuoi/LuyenTapBieuThucChinhQuy/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaiThiCuoiModule1/Cau3/Cau3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="16" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
   </component>
