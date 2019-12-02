@@ -62,7 +62,7 @@ public abstract class Service {
 
     public void addNewService(String service) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhập vào tên " + service + ":");
+        System.out.println("nhập vào tên dịch vụ " +":");
         this.name = scanner.nextLine();
         System.out.println("nhập vào số tiền thuê theo ngày");
         while (true){

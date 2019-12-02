@@ -54,12 +54,16 @@ public class Customer {
         }
         while (!isValid);
         this.setName(name);
-        System.out.println("birthday :");
-
+        String birthday;
         do {
-
+            System.out.println("birthday :");
+            birthday=scanner.nextLine();
+            isValid=FuncValidate.checkBirthday(birthday);
+            if(!isValid){
+                System.out.println("ngày sinh phải theo định dạng dd/mm/yyyy và lớn hơn 18 tuổi");
+            }
         } while (!isValid);
-        this.setBirthday(scanner.nextLine());
+        this.setBirthday(birthday);
         System.out.println("gender: ");
         String gender;
         do {
