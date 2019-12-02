@@ -106,14 +106,14 @@ public class Customer {
 
     public void showInfor() {
         System.out.println("Thông tin khách hàng : " +
-                "\nname=" + name +
-                "\nbirthday=" + birthday +
-                "\ngender=" + gender +
-                "\nidCard=" + idCard +
-                "\nphoneNumber=" + phoneNumber +
-                "\nemail=" + email +
-                "\ntype=" + type +
-                "\naddress=" + address);
+                "\nname: " + name +
+                "\nbirthday: " + birthday +
+                "\ngender: " + gender +
+                "\nidCard: " + idCard +
+                "\nphoneNumber: " + phoneNumber +
+                "\nemail: " + email +
+                "\ntype: " + type +
+                "\naddress: " + address);
     }
 
     public String getId() {

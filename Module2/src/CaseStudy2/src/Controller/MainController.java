@@ -1,5 +1,6 @@
 package Controller;
 
+import commons.CustomerComparator;
 import models.*;
 
 
@@ -7,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -226,6 +228,7 @@ public class MainController {
         Customer customer=new Customer(id);
         String data=customer.toString();
         funcWriteFileCvs(data,pathCustomer);
+        displayMainMenu();
     }
 
     public static void showInforCustomer() throws IOException {
@@ -233,12 +236,10 @@ public class MainController {
         if(customerArray.size()==0){
             System.out.println("không có dịch vụ nào ");
         }
-        int couter=1;
+        Collections.sort(customerArray,new CustomerComparator());
         for (Customer customer:customerArray) {
-            System.out.println("thông tin khách hàng thứ "+couter);
             customer.showInfor();
             System.out.println("----------------------------");
-            couter++;
         }
     }
     public static ArrayList<Customer> readCustomerCSV() throws IOException {
@@ -246,12 +247,10 @@ public class MainController {
         FileReader reader = new FileReader(pathCustomer);
         String stringBuffer = "";
         int i;
-        Customer customer = new Customer();
         while ((i = reader.read()) != -1) {
             if ((char) i == '\n') {
+                Customer customer = new Customer();
                 String[] data = stringBuffer.split(",");
-                System.out.println(stringBuffer);
-                System.out.println(data[0]);
                 customer.convertToProperties(data);
                 customerArray.add(customer);
                 stringBuffer = "";
