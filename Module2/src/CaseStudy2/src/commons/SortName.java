@@ -4,7 +4,7 @@ import models.Customer;
 
 import java.util.Comparator;
 
-public class CustomerComparator implements Comparator<Customer> {
+public class SortName implements Comparator<Customer> {
     @Override
     public int compare(Customer cus1, Customer cus2) {
         if(cus1.getName().compareTo(cus2.getName())==0){

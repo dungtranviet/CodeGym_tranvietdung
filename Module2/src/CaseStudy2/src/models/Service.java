@@ -117,7 +117,6 @@ public abstract class Service {
         return data;
     }
     public void convertToProperties(String []data) {
-        System.out.println("check");
         this.setId(data[0]);
         this.setName(data[1]);
         this.setMaxOfNumberPeople(Integer.parseInt(data[2]));

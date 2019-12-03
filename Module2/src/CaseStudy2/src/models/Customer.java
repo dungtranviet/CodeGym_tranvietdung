@@ -208,7 +208,6 @@ public class Customer {
     public String toString() {
         return "" + id + "," + name + "," + birthday + "," + gender + "," + idCard + "," + phoneNumber + "," + email + "," + type + "," + address + ",";
     }
-
     public void convertToProperties(String[] data) {
         this.setId(data[0]);
         this.setName(data[1]);
