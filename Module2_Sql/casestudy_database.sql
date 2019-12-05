@@ -1,6 +1,6 @@
-drop database if exists furama_resort_tuan_c10g;
-create database furama_resort_tuan_c10g;
-use furama_resort_tuan_c10g;
+drop database if exists furama_resort_dung_c10g;
+create database furama_resort_dung_c10g;
+use furama_resort_dung_c10g;
 CREATE TABLE ViTri(
 	IDViTri int,
     TenViTri NVARCHAR(45) UNIQUE,
