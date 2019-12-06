@@ -140,16 +140,19 @@ insert into DichVuDiKem values(3, 'Khăn mặt', 5000, 1,'Kha dung');
 insert into DichVuDiKem values(4, 'matxa', 50000, 1,'Kha dung');
 
 insert into HopDong values(1,'2019:11:05','2019:11:15',300000,20000000,1,1,1);
-insert into HopDong values(2,'2019:11:15','2019:11:25',200000,50000000,2,2,2);
-insert into HopDong values(3,'2019:11:15','2019:11:25',300000,30000000,1,1,3);
-insert into HopDong values(4,'2019:01:01','2019:11:25',300000,10000000,1,1,4);
+insert into HopDong values(2,'2019:06:15','2019:11:25',200000,50000000,2,2,2);
+insert into HopDong values(3,'2019:07:15','2019:11:25',300000,30000000,2,1,3);
+insert into HopDong values(4,'2019:01:01','2019:11:25',300000,10000000,3,1,4);
 insert into HopDong values(5,'2019:02:02','2019:11:25',300000,10000000,1,2,5);
-insert into HopDong values(6,'2018:08:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(7,'2017:08:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(8,'2018:08:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(9,'2018:08:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(10,'2018:08:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(11,'2018:08:02','2019:11:25',300000,10000000,1,1,5);
+insert into HopDong values(6,'2019:09:02','2019:11:25',300000,10000000,4,3,5);
+insert into HopDong values(7,'2019:08:02','2019:11:25',300000,10000000,5,3,5);
+insert into HopDong values(8,'2019:09:02','2019:11:25',300000,10000000,1,3,5);
+insert into HopDong values(9,'2019:11:02','2019:11:25',300000,10000000,1,3,5);
+insert into HopDong values(10,'2019:12:02','2019:11:25',300000,10000000,1,3,5);
+insert into HopDong values(11,'2019:08:02','2019:11:25',300000,10000000,1,1,5);
+insert into HopDong values(12,'2019:11:02','2019:11:25',300000,10000000,4,4,5);
+insert into HopDong values(13,'2019:12:02','2019:11:25',300000,10000000,5,5,5);
+insert into HopDong values(14,'2019:10:02','2019:11:25',300000,10000000,3,3,5);
 
 insert into HopDongChiTiet values(1,1,1);
 insert into HopDongChiTiet values(1,2,5);
@@ -160,6 +163,9 @@ insert into HopDongChiTiet values(2,3,20);
 insert into HopDongChiTiet values(3,1,5);
 insert into HopDongChiTiet values(4,1,5);
 insert into HopDongChiTiet values(5,1,5);
+insert into HopDongChiTiet values(9,2,5);
+insert into HopDongChiTiet values(10,3,5);
+insert into HopDongChiTiet values(12,4,5);
 select * from ViTri;
 select * from TrinhDo;
 select * from BoPhan;
@@ -256,7 +262,8 @@ union select khachhang.hoten from khachhang;
 -- 9.	Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2019
 --  thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
 
-select temp.month,count(month(hopdong.ngaylamhopdong)) as so_khach_hang_dang_ky,sum(hopdong.tongtien) as tong_tien from
+select temp.month,count(month(hopdong.ngaylamhopdong)) as so_khach_hang_dang_ky,sum(hopdong.tongtien) as tong_tien 
+from
 (select 1 as month
 union select 2 as month
 union select 3 as month
@@ -276,4 +283,49 @@ on khachhang.idkhachhang=hopdong.idkhachhang
 where year(hopdong.ngaylamhopdong)=2019 or month(hopdong.ngaylamhopdong) is null
 group by temp.month 
 order by temp.month asc;
-
+-- 10.	Hiển thị thông tin tương ứng với từng Hợp đồng thì đã sử dụng bao nhiêu Dịch vụ đi kèm. 
+-- Kết quả hiển thị bao gồm IDHopDong, NgayLamHopDong, NgayKetthuc, TienDatCoc, 
+-- SoLuongDichVuDiKem (được tính dựa trên việc count các IDHopDongChiTiet).
+select hopdong.idhopdong,count(hopdongchitiet.idhopdong)
+from hopdong
+left join hopdongchitiet
+on hopdongchitiet.idhopdong=hopdong.idhopdong
+group by hopdong.idhopdong
+order by hopdong.idhopdong;
+-- 11.	Hiển thị thông tin các Dịch vụ đi kèm đã được sử dụng bởi những Khách hàng 
+-- có TenLoaiKhachHang là “Diamond” và có địa chỉ là “Vinh” hoặc “Quảng Ngãi”.
+select dichvudikem.IDDichVuDiKem,tendichvudikem,Gia,DonVi,TrangThaiKhaDung,khachhang.hoten,hopdong.idhopdong,loaikhach.tenloaikhach,khachhang.diachi
+from dichvudikem
+inner join hopdongchitiet
+on hopdongchitiet.iddichvudikem=dichvudikem.iddichvudikem
+inner join hopdong
+on hopdong.idhopdong=hopdongchitiet.idhopdong
+inner join khachhang
+on khachhang.idkhachhang=hopdong.idkhachhang
+inner join loaikhach
+on loaikhach.idloaikhach=khachhang.idloaikhach
+where loaikhach.tenloaikhach='Diamond' and khachhang.diachi in ('quảng ngãi','đà nẵng');
+-- 12.	Hiển thị thông tin IDHopDong, TenNhanVien, TenKhachHang, SoDienThoaiKhachHang, TenDichVu,
+-- SoLuongDichVuDikem (được tính dựa trên tổng Hợp đồng chi tiết), TienDatCoc của tất cả các dịch vụ
+-- đã từng được khách hàng đặt vào 3 tháng cuối năm 2019 nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2019.
+select dichvu.iddichvu, nhanvien.hoten as ho_ten_nhan_vien, khachhang.hoten as ho_ten_khach_hang,
+ khachhang.SDT, dichvu.TenDichVu,count(iddichvudikem) as SoLuongDichVuDikem
+ from (select iddichvu,idkhachhang,idnhanvien,idhopdong from hopdong 
+		where quarter(ngaylamhopdong)=4 and year(ngaylamhopdong)=2019
+		and hopdong.iddichvu not in(select hopdong.iddichvu from hopdong
+									where quarter(ngaylamhopdong)in (1,2) and year(ngaylamhopdong)=2019)) as temp
+inner join khachhang on khachhang.idkhachhang=temp.idkhachhang
+inner join nhanvien on nhanvien.idnhanvien=temp.idnhanvien
+inner join dichvu on dichvu.iddichvu=temp.iddichvu
+left join hopdongchitiet on hopdongchitiet.idhopdong=temp.idhopdong
+group by temp.iddichvu;
+-- 13.	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. 
+-- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
+select * from (select dichvudikem.iddichvudikem,tendichvudikem,hopdong.idhopdong,count(dichvudikem.iddichvudikem)as so_lan_su_dung
+				from dichvudikem
+				inner join hopdongchitiet
+				on dichvudikem.iddichvudikem=hopdongchitiet.iddichvudikem
+                inner join hopdong
+				on hopdong.idhopdong=hopdongchitiet.idhopdong
+				group by dichvudikem.iddichvudikem)as temp
+having so_lan_su_dung=max(so_lan_su_dung);
