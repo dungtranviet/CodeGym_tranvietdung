@@ -106,9 +106,9 @@ insert into TrinhDo values(2,'Cao Đẳng');
 insert into Bophan values(1,'Hành chính');
 insert into Bophan values(2,'Nhân sự');
 insert into NhanVien values(1,'Nguyễn Văn hai', 1,1,1,'1988:01:01','201123451',100000,'0935123451','b1@b.com','Đà Nẵng');
-insert into NhanVien values(2,'Nguyễn Văn Thanh', 1,1,1,'1988:01:01','201123452',100000,'0935123452','b2@b.com','Đà Nẵng');
-insert into NhanVien values(3,'Nguyễn Văn Khoa', 1,1,1,'1988:01:01','201123453',100000,'0935123453','b3@b.com','Đà Nẵng');
-insert into NhanVien values(4,'Nguyễn Văn Dung', 1,1,1,'1988:01:01','201123454',100000,'0935123454','b4@b.com','Đà Nẵng');
+insert into NhanVien values(2,'Nguyễn Văn Thanh', 2,1,1,'1988:01:01','201123452',100000,'0935123452','b2@b.com','Đà Nẵng');
+insert into NhanVien values(3,'Nguyễn Văn Khoa', 1,2,1,'1988:01:01','201123453',100000,'0935123453','b3@b.com','Đà Nẵng');
+insert into NhanVien values(4,'Nguyễn Văn Dung', 1,2,1,'1988:01:01','201123454',100000,'0935123454','b4@b.com','Đà Nẵng');
 insert into NhanVien values(5,'Nguyễn Văn Em', 1,1,1,'1988:01:01','201123455',100000,'0935123455','b5@b.com','Đà Nẵng');
 insert into LoaiDichVu values(1,'Villa');
 insert into LoaiDichVu values(2,'House');
@@ -140,19 +140,19 @@ insert into DichVuDiKem values(3, 'Khăn mặt', 5000, 1,'Kha dung');
 insert into DichVuDiKem values(4, 'matxa', 50000, 1,'Kha dung');
 
 insert into HopDong values(1,'2019:11:05','2019:11:15',300000,20000000,1,1,1);
-insert into HopDong values(2,'2019:06:15','2019:11:25',200000,50000000,2,2,2);
-insert into HopDong values(3,'2019:07:15','2019:11:25',300000,30000000,2,1,3);
-insert into HopDong values(4,'2019:01:01','2019:11:25',300000,10000000,3,1,4);
-insert into HopDong values(5,'2019:02:02','2019:11:25',300000,10000000,1,2,5);
-insert into HopDong values(6,'2019:09:02','2019:11:25',300000,10000000,4,3,5);
-insert into HopDong values(7,'2019:08:02','2019:11:25',300000,10000000,5,3,5);
-insert into HopDong values(8,'2019:09:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(9,'2019:11:02','2019:11:25',300000,10000000,1,3,5);
-insert into HopDong values(10,'2019:12:02','2019:11:25',300000,10000000,1,3,5);
+insert into HopDong values(2,'2019:06:15','2019:11:25',200000,50000000,3,2,2);
+insert into HopDong values(3,'2019:07:15','2019:11:25',300000,30000000,3,1,3);
+insert into HopDong values(4,'2012:01:01','2019:11:25',300000,10000000,3,1,3);
+insert into HopDong values(5,'2017:02:02','2019:11:25',300000,10000000,1,2,1);
+insert into HopDong values(6,'2019:09:02','2019:11:25',300000,10000000,4,3,1);
+insert into HopDong values(7,'2019:08:02','2019:11:25',300000,10000000,5,3,4);
+insert into HopDong values(8,'2016:09:02','2019:11:25',300000,10000000,5,3,4);
+insert into HopDong values(9,'2013:11:02','2019:11:25',300000,10000000,5,3,3);
+insert into HopDong values(10,'2019:12:02','2019:11:25',300000,10000000,1,3,1);
 insert into HopDong values(11,'2019:08:02','2019:11:25',300000,10000000,1,1,5);
 insert into HopDong values(12,'2019:11:02','2019:11:25',300000,10000000,4,4,5);
 insert into HopDong values(13,'2019:12:02','2019:11:25',300000,10000000,5,5,5);
-insert into HopDong values(14,'2019:10:02','2019:11:25',300000,10000000,3,3,5);
+insert into HopDong values(14,'2015:10:02','2019:11:25',300000,10000000,3,3,5);
 
 insert into HopDongChiTiet values(1,1,1);
 insert into HopDongChiTiet values(1,2,5);
@@ -166,6 +166,13 @@ insert into HopDongChiTiet values(5,1,5);
 insert into HopDongChiTiet values(9,2,5);
 insert into HopDongChiTiet values(10,3,5);
 insert into HopDongChiTiet values(12,4,5);
+insert into HopDongChiTiet values(7,1,1);
+insert into HopDongChiTiet values(8,1,1);
+insert into HopDongChiTiet values(9,1,1);
+insert into HopDongChiTiet values(10,1,1);
+insert into HopDongChiTiet values(11,1,1);
+insert into HopDongChiTiet values(12,1,1);
+
 select * from ViTri;
 select * from TrinhDo;
 select * from BoPhan;
@@ -329,3 +336,64 @@ select * from (select dichvudikem.iddichvudikem,tendichvudikem,hopdong.idhopdong
 				on hopdong.idhopdong=hopdongchitiet.idhopdong
 				group by dichvudikem.iddichvudikem)as temp
 having so_lan_su_dung=max(so_lan_su_dung);
+
+-- 14.	Hiển thị thông tin tất cả các Dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất.
+-- Thông tin hiển thị bao gồm IDHopDong, TenLoaiDichVu, TenDichVuDiKem, SoLanSuDung.
+
+select hopdong.idhopdong,tenloaidichvu,tendichvudikem,count(hopdongchitiet.IDDichVuDiKem)as so_lan_su_dung from dichvudikem
+inner join hopdongchitiet
+on hopdongchitiet.iddichvudikem=dichvudikem.IDDichVuDiKem
+inner join hopdong
+on hopdong.IDHopDong=hopdongchitiet.IDHopDong
+inner join dichvu
+on dichvu.iddichvu=hopdong.iddichvu
+inner join loaidichvu
+on loaidichvu.idloaidichvu=dichvu.idloaidichvu
+group by hopdongchitiet.IDDichVuDiKem
+having so_lan_su_dung=1;
+
+-- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm IDNhanVien, HoTen, TrinhDo, TenBoPhan, SoDienThoai,
+-- DiaChi mới chỉ lập được tối đa 3 hợp đồng từ năm 2018 đến 2019.
+select nhanvien.idnhanvien,hoten,trinhdo.trinhdo,bophan.tenbophan,nhanvien.SDT,nhanvien.diachi,hopdong.idhopdong,count(nhanvien.idnhanvien)as so_luong_hop_dong
+from trinhdo
+inner join nhanvien
+on nhanvien.idtrinhdo=trinhdo.idtrinhdo
+inner join bophan
+on bophan.idbophan=nhanvien.idbophan
+inner join hopdong
+on hopdong.idnhanvien=nhanvien.idnhanvien
+where ngaylamhopdong between '2018-01-01' and '2019-12-31'
+group by nhanvien.idnhanvien
+having so_luong_hop_dong<=3;
+-- 17.	Cập nhật thông tin những khách hàng có TenLoaiKhachHang từ  Platinium lên Diamond, 
+-- chỉ cập nhật những khách hàng đã từng đặt phòng với tổng Tiền thanh toán trong năm 2019 là lớn hơn 10.000.000 VNĐ.
+update khachhang ,(select idkhachhang,sum(hopdong.TongTien)as tong_tien from hopdong
+where year(ngaylamhopdong)=2019
+group by idkhachhang
+having tong_tien >10000000)as temp
+set khachhang.idloaikhach=(select idloaikhach as loaikhach from loaikhach where tenloaikhach='Diamond')
+where khachhang.idloaikhach=(select idloaikhach from loaikhach where tenloaikhach='Platinium')
+and khachhang.idkhachhang=temp.idkhachhang;
+-- 18.	Xóa những khách hàng có hợp đồng trước năm 2016 (chú ý ràngbuộc giữa các bảng).
+delete hopdongchitiet,hopdong,khachhang
+from khachhang inner join hopdong
+on khachhang.idkhachhang=hopdong.idkhachhang
+inner join hopdongchitiet
+on hopdong.idhopdong=hopdongchitiet.idhopdong
+where not exists (select hopdong.idhopdong where year(hopdong.ngaylamhopdong)>2016 and khachhang.idkhachhang =hopdong.idkhachhang);
+
+-- 19.	Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2019 lên gấp đôi.
+update dichvudikem ,(select dichvudikem.iddichvudikem,count(dichvudikem.iddichvudikem)as so_lan_su_dung from dichvudikem
+inner join hopdongchitiet on hopdongchitiet.iddichvudikem=dichvudikem.iddichvudikem
+inner join hopdong on hopdong.idhopdong=hopdongchitiet.idhopdong
+group by dichvudikem.iddichvudikem
+having so_lan_su_dung >10) as temp
+set dichvudikem.gia=dichvudikem.gia*2
+where dichvudikem.iddichvudikem=temp.iddichvudikem;
+-- 20.	Hiển thị thông tin của tất cả các Nhân viên và Khách hàng có trong hệ thống, 
+-- thông tin hiển thị bao gồm ID (IDNhanVien, IDKhachHang), HoTen, Email, So DienThoai, NgaySinh, DiaChi
+select nhanvien.IDNhanVien as id,nhanvien.hoten,nhanvien.Email,nhanvien.SDT,nhanvien.email,nhanvien.DiaChi,'nhan vien' as Fromtable
+from nhanvien
+union all
+select khachhang.idkhachhang ,khachhang.hoten,khachhang.Email,khachhang.SDT,khachhang.email,khachhang.DiaChi,'khac hang' as Fromtable
+from khachhang;
