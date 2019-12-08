@@ -25,7 +25,8 @@ public class MainController {
                 "3.Add new customer\n" +
                 "4.Show information customer'\n" +
                 "5.Add New Booking Resort '\n" +
-                "6.exit");
+                "6.Show Information Employee '\n" +
+                "7.exit");
         Scanner scanner = new Scanner(System.in);
         int choise = scanner.nextInt();
         switch (choise) {
@@ -45,6 +46,9 @@ public class MainController {
                 addNewBookingResort();
                 break;
             case 6:
+                showInforEmployee();
+                break;
+            case 7:
                 System.exit(0);
                 break;
             default:
@@ -403,5 +407,37 @@ public class MainController {
         }
         reader.close();
         return tree;
+    }
+    private static void showInforEmployee(){
+        Employee employee1=new Employee("1","trandung","12/12/1994","da nang");
+        Employee employee2=new Employee("2","nguyen hao","12/12/1993","vinh");
+        Employee employee3=new Employee("3","cong phuong","12/12/1997","hue");
+        Employee employee4=new Employee("4","van binh","12/12/1992","nha trang");
+        Employee employee5=new Employee("5","hai hoa","12/12/1999","ha noi");
+        Employee employee6=new Employee("6","viet anh","12/12/1991","quang binh");
+        Employee employee7=new Employee("7","lam binh","12/12/1992","quang nam");
+        Employee employee8=new Employee("8","doan binh","12/12/1993","da nang");
+        Employee employee9=new Employee("9","van hanh","12/12/1994","da nang");
+        Employee employee10=new Employee("10","viet huong","12/12/1981","da nang");
+        Map<String,Employee> map=new HashMap<String, Employee>();
+        map.put(employee1.getId(),employee1);
+        map.put(employee2.getId(),employee2);
+        map.put(employee3.getId(),employee3);
+        map.put(employee4.getId(),employee4);
+        map.put(employee5.getId(),employee5);
+        map.put(employee6.getId(),employee6);
+        map.put(employee7.getId(),employee7);
+        map.put(employee8.getId(),employee8);
+        map.put(employee9.getId(),employee9);
+        map.put(employee10.getId(),employee10);
+       Set<String> set=map.keySet();
+        int i=1;
+        System.out.println("thông tin nhân viên :");
+        for (Object key:set) {
+            System.out.println("No"+i);
+            System.out.println(map.get(key).toString());
+            System.out.println("----------------------------");
+            i++;
+        }
     }
 }
