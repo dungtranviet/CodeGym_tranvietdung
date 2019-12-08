@@ -26,7 +26,17 @@ public class Customer {
         this.id = id;
         this.addInfor();
     }
-
+    public Customer(String id, String name, String birthday, String gender, int idCard, int phoneNumber, String email, String type, String address) {
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.idCard = idCard;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.type = type;
+        this.address = address;
+    }
     public Customer(String id, String name, String birthday, String gender, int idCard, int phoneNumber, String email, String type, String address, Service service) {
         this.id = id;
         this.name = name;
