@@ -1,8 +1,10 @@
 package controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/home")
@@ -11,7 +13,7 @@ public class HomeController {
     public String method0(){
         return "method0";
     }
-    @RequestMapping(value = {"/method1","method1/one","method1/two"})
+    @RequestMapping(value = {"/method1","method1/one","method1/two"},method = RequestMethod.GET)
     public String method1(){
         return "method1";
     }
@@ -34,5 +36,17 @@ public class HomeController {
     @RequestMapping(value = {"/method6"},consumes = {"application/json"},method =RequestMethod.POST )
     public String method6(){
         return "method6";
+    }
+    @RequestMapping(value = {"/method7/{id}"},method ={RequestMethod.POST})
+    public ModelAndView method7(@PathVariable("id") int id){
+        ModelAndView modelAndView=new ModelAndView("method7","id",id);
+        return modelAndView;
+    }
+    @RequestMapping(value = {"/method8/{id}/{name}"},method = {RequestMethod.POST})
+    public ModelAndView method8(@PathVariable("id") int id,@PathVariable("name") String name){
+       ModelAndView modelAndView=new ModelAndView("method8");
+       modelAndView.addObject("id",id);
+       modelAndView.addObject("name",name);
+       return modelAndView;
     }
 }
