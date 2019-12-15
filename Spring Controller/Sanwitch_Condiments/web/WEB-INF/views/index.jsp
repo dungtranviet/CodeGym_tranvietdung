@@ -13,7 +13,7 @@
 </head>
 <body>
 <h3>Sandwitch Condiments</h3>
-<form:form action="/save" method="POST" modelAttribute="condiment">
+<form:form action="/save" method="POST" >
     <table>
         <tr>
             <td><input type="checkbox" name="condiments" value="Lettuce">Lettuce</td>
