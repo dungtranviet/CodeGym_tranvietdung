@@ -1,4 +1,4 @@
-package com.codegym.demo.repository.Impl;
+package com.codegym.demo.repository.impl;
 
 import com.codegym.demo.model.Customer;
 import com.codegym.demo.repository.CustomerRepository;
