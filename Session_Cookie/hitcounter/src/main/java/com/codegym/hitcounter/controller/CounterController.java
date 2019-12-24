@@ -12,6 +12,7 @@ public class CounterController {
     /* add MyCounter in model attribute */
     @ModelAttribute("mycounter")
     public MyCounter setUpCounter() {
+        System.out.println("lan dau tien");
         return new MyCounter();
     }
     @GetMapping("/")
