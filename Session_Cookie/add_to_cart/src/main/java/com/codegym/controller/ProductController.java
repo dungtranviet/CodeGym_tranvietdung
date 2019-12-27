@@ -56,7 +56,6 @@ public class ProductController {
     }
     @GetMapping("/delete/{id}")
     public String delete(@ModelAttribute("cart") Cart cart,@PathVariable(name = "id") Long id){
-        System.out.println("okokokkdfdsfsfsd");
         cart.remove(id);
         return "redirect:/show-cart";
     }
