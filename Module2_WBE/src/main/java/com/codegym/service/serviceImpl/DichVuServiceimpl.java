@@ -19,8 +19,8 @@ public class DichVuServiceimpl implements DichVuService {
     }
 
     @Override
-    public Optional<FuramaDichVu> getDichVu(Long id) {
-        return dichvuRepository.findById(id);
+    public FuramaDichVu getDichVu(Long id) {
+        return dichvuRepository.findById(id).orElse(null);
     }
 
     @Override

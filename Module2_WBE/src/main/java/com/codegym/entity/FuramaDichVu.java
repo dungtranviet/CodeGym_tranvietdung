@@ -1,11 +1,13 @@
 package com.codegym.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "dichvu")
 public class FuramaDichVu {
     @Id
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "tendichvu")
