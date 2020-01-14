@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="col-5">
+    <div class="container">
+        <h3>Đăng ký thành viên</h3>
+        <form action="/dangky" method="post" th:object="${khachhang}" >
+            <div class="form-group">
+                <label for="hoten">Họ Và Tên:</label>
+                <p th:if="${#fields.hasErrors('hoTen')}" th:errors="*{hoTen}" class="text-danger"></p>
+                <input type="text" class="form-control"  id="hoten" name="hoten" th:field="*{hoTen}">
+            </div>
+            <div class="form-group">
+                <label for="ngaysinh">Ngày Sinh:</label>
+                <p th:if="${#fields.hasErrors('ngaySinh')}" th:text="${'ngày sinh không hợp lệ'}" class="text-danger"></p>
+                <input type="date" class="form-control"  id="ngaysinh" name="ngaysinh" th:field="*{ngaySinh}">
+            </div>
+            <div class="form-group">
+                <label for="socmnd">Số CMND :</label>
+                <p th:if="${#fields.hasErrors('cmnd')}" th:errors="*{cmnd}" class="text-danger"></p>
+                <input type="text" class="form-control"  id="socmnd" name="socmnd" th:field="*{cmnd}">
+            </div>
+            <div class="form-group">
+                <label for="sodt">Số Điện Thoại:</label>
+                <p th:if="${#fields.hasErrors('sdt')}" th:errors="*{sdt}" class="text-danger"></p>
+                <input type="text" class="form-control"  id="sodt" name="sodt" th:field="*{sdt}">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"></p>
+                <input type="text" class="form-control"  id="email" name="email" th:field="*{email}">
+            </div>
+            <div class="form-group">
+                <label for="diachi">Địa Chỉ:</label>
+                <p th:if="${#fields.hasErrors('diaChi')}" th:errors="*{diaChi}" class="text-danger"></p>
+                <input type="text" class="form-control"  id="diachi" name="diachi" th:field="*{diaChi}">
+            </div>
+            <a href="/" class="btn btn-danger" >Cancel</a>
+            <button type="submit" class="btn btn-primary">Đăng Ký!!</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

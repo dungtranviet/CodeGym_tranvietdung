@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Thông tin chi tiết của thành phố</h2>
+<form action="/edit" th:object="${city}" method="post">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text" th:field="*{tenThanhPho}"disabled></td>
+            <td th:if="${#fields.hasErrors('tenThanhPho')}" th:errors="*{tenThanhPho}"style="color: red"></td>
+        </tr>
+        <tr>
+            <td>Diện Tích</td>
+            <td><input type="text" th:field="*{dienTich}"disabled></td>
+        </tr>
+        <tr>
+            <td>Dân Số</td>
+            <td><input type="text" th:field="*{danSo}"disabled></td>
+        </tr>
+        <tr>
+            <td>GDP</td>
+            <td><input type="text" th:field="*{GDP}"disabled></td>
+        </tr>
+        <tr>
+            <td>Giới Thiệu</td>
+            <td><input type="text" th:field="*{moTa}"disabled></td>
+        </tr>
+        <tr>
+            <td>Quốc Gia</td>
+            <td>
+                <select th:field="*{quocGia}"disabled>
+                    <option th:each="p : ${cacquocgia}" th:value="${p.id_quocgia}" th:text="${p.tenQuocGia}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><a th:href="@{/delete/__${city.id}__}">Delete</a></td>
+        </tr>
+        <tr>
+            <td><a th:href="@{'/'}">Thoát</a></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

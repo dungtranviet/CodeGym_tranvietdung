@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:if="${successMessage}">
+    <p th:text="${successMessage}" style="color: darkgreen"></p>
+</th:block>
+
+<h2>Thêm Thành Phố</h2>
+<form action="/edit" th:object="${city}" method="post">
+    <input th:type="hidden" name="id" th:field="*{id}">
+    <table>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text" th:field="*{tenThanhPho}"></td>
+            <td th:if="${#fields.hasErrors('tenThanhPho')}" th:errors="*{tenThanhPho}"style="color: red"></td>
+        </tr>
+        <tr>
+            <td>Diện Tích</td>
+            <td><input type="text" th:field="*{dienTich}"></td>
+            <!--            <td th:if="${#fields.hasErrors('dienTich')}" th:errors="*{dienTich}"style="color: red"></td>-->
+        </tr>
+        <tr>
+            <td>Dân Số</td>
+            <td><input type="text" th:field="*{danSo}"></td>
+            <!--            <td th:if="${#fields.hasErrors('danSo')}" th:errors="*{danSo}"style="color: red"></td>-->
+        </tr>
+        <tr>
+            <td>GDP</td>
+            <td><input type="text" th:field="*{GDP}"></td>
+            <!--            <td th:if="${#fields.hasErrors('GDP')}" th:errors="*{GDP}"style="color: red"></td>-->
+        </tr>
+        <tr>
+            <td>Giới Thiệu</td>
+            <td><input type="text" th:field="*{moTa}"></td>
+            <!--            <td th:if="${#fields.hasErrors('moTa')}" th:errors="*{moTa}"style="color: red"></td>-->
+        </tr>
+        <tr>
+            <td>Quốc Gia</td>
+            <td>
+                <select th:field="*{quocGia}">
+                    <option th:each="p : ${cacquocgia}" th:value="${p.id_quocgia}" th:text="${p.tenQuocGia}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Cập Nhật"></td>
+        </tr>
+        <tr>
+            <td><a th:href="@{'/'}">Thoát</a></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

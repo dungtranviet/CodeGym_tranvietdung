@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{'/create-customer'}">Add New Customer</a><br>
+<a th:href="@{'/listprovince'}">list province</a><br>
+<a th:href="@{'/get-customer-by-province'}">get all customer by province</a><br>
+<form action="/find-by-firstname" method="get">
+    <label>Tìm kiếm theo tên :  </label>
+    <input type="text" name="firstName">
+    <input type="submit" th:value="search">
+</form>
+<table border="1px">
+    <tr>
+        <td>id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Province</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+    <th:block th:each="customer,row:${customers}">
+        <tr>
+            <td th:text="${row.count+(customers.number)*5}"></td>
+            <td th:text="${customer.firstName}"></td>
+            <td th:text="${customer.lastName}"></td>
+            <td th:text="${customer.province.name}"></td>
+            <td><a th:href="@{'/edit-customer/{id}/'(id=${customer.id})}">Edit</a></td>
+            <td><a th:href="@{/delete-customer/__${customer.id}__}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+<th:block th:if="not${firstName}">
+    <div>
+        <a th:href="@{'/'(page=${customers.number - 1})}" th:if="${customers.hasPrevious()}">Previous</a>
+        <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+        <a th:href="@{'/'(page=${customers.number + 1})}" th:if="${customers.hasNext()}">Next</a>
+    </div>
+</th:block>
+<th:block th:if="${firstName}">
+    <div>
+        <a th:href="@{'/find-by-firstname/'(firstName=${firstName},page=${customers.number - 1})}" th:if="${customers.hasPrevious()}">Previous</a>
+        <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+        <a th:href="@{'/find-by-firstname'(firstName=${firstName},page=${customers.number + 1})}" th:if="${customers.hasNext()}">Next</a>
+    </div>
+</th:block>
+
+
+</body>
+</html>
